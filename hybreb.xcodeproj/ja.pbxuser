@@ -24,6 +24,8 @@
 		executableUserSymbolLevel = 0;
 		libgmallocEnabled = 0;
 		name = hybreb;
+		savedGlobals = {
+		};
 		showTypeColumn = 0;
 		sourceDirectories = (
 		);
@@ -44,27 +46,17 @@
 	};
 	09658C911402663F00391CD3 /* RecordViewController.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1244, 524}}";
-			sepNavSelRange = "{68, 0}";
-			sepNavVisRange = "{0, 502}";
+			sepNavIntBoundsRect = "{{0, 0}, {1244, 547}}";
+			sepNavSelRange = "{299, 0}";
+			sepNavVisRange = "{0, 535}";
 		};
 	};
 	09658C921402663F00391CD3 /* RecordViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1244, 2405}}";
-			sepNavSelRange = "{1565, 0}";
-			sepNavVisRange = "{851, 1168}";
+			sepNavIntBoundsRect = "{{0, 0}, {1244, 2002}}";
+			sepNavSelRange = "{3716, 0}";
+			sepNavVisRange = "{144, 1229}";
 		};
-	};
-	09658C971402669200391CD3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 28A0AB4B0D9B1048005BE974 /* hybreb_Prefix.pch */;
-		name = "hybreb_Prefix.pch: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 181;
-		vrLoc = 0;
 	};
 	09658C981402669200391CD3 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -86,116 +78,19 @@
 		vrLen = 1507;
 		vrLoc = 0;
 	};
-	09658C9A1402669200391CD3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 09658C911402663F00391CD3 /* RecordViewController.h */;
-		name = "RecordViewController.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 236;
-		vrLoc = 0;
-	};
-	09658C9B1402669200391CD3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 09658C921402663F00391CD3 /* RecordViewController.m */;
-		name = "RecordViewController.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1199;
-		vrLoc = 0;
-	};
-	09658C9C1402669200391CD3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 09658C921402663F00391CD3 /* RecordViewController.m */;
-		name = "RecordViewController.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 918;
-		vrLoc = 540;
-	};
 	09658CB1140380F500391CD3 /* ListViewController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1123, 547}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 232}";
+			sepNavSelRange = "{354, 0}";
+			sepNavVisRange = "{0, 361}";
 		};
 	};
-	09658CB61403810200391CD3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 09658C911402663F00391CD3 /* RecordViewController.h */;
-		name = "RecordViewController.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 236;
-		vrLoc = 0;
-	};
-	09658CB71403810200391CD3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 28216C960DB411BC00E5133A /* FirstViewController.m */;
-		name = "FirstViewController.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 916;
-		vrLoc = 543;
-	};
-	09658CB81403810200391CD3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 09658C921402663F00391CD3 /* RecordViewController.m */;
-		name = "RecordViewController.m: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 1199;
-		vrLoc = 0;
-	};
-	09658CB91403810200391CD3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 28216C950DB411BC00E5133A /* FirstViewController.h */;
-		name = "FirstViewController.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 234;
-		vrLoc = 0;
-	};
-	09658CBA1403810200391CD3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 09658CB1140380F500391CD3 /* ListViewController.h */;
-		rLen = 0;
-		rLoc = 9223372036854775807;
-		rType = 0;
-	};
-	09658CBB1403810200391CD3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 09658CB1140380F500391CD3 /* ListViewController.h */;
-		name = "ListViewController.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 232;
-		vrLoc = 0;
-	};
-	09658CC3140385FC00391CD3 /* hybreb_logo.png */ = {
-		isa = PBXFileReference;
-		lastKnownFileType = image.png;
-		name = hybreb_logo.png;
-		path = /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/hybreb_logo.png;
-		sourceTree = "<absolute>";
-	};
-	09658CC51403860300391CD3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 09658CB1140380F500391CD3 /* ListViewController.h */;
-		name = "ListViewController.h: 1";
-		rLen = 0;
-		rLoc = 0;
-		rType = 0;
-		vrLen = 232;
-		vrLoc = 0;
+	09658CB2140380F500391CD3 /* ListViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 1261}}";
+			sepNavSelRange = "{1697, 0}";
+			sepNavVisRange = "{1443, 981}";
+		};
 	};
 	09658CC61403860300391CD3 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
@@ -206,14 +101,6 @@
 		rType = 0;
 		vrLen = 181;
 		vrLoc = 0;
-	};
-	09658CC71403860300391CD3 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 09658CC3140385FC00391CD3 /* hybreb_logo.png */;
-	};
-	09658CC81403860300391CD3 /* PBXBookmark */ = {
-		isa = PBXBookmark;
-		fRef = 09658CC3140385FC00391CD3 /* hybreb_logo.png */;
 	};
 	09658CE41403906300391CD3 /* PBXBookmark */ = {
 		isa = PBXBookmark;
@@ -227,65 +114,63 @@
 		isa = PBXBookmark;
 		fRef = 09658CD414038B5600391CD3 /* Default.png */;
 	};
-	09658CE71403906300391CD3 /* PBXTextBookmark */ = {
+	09658D1B1403A4AB00391CD3 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 09658C911402663F00391CD3 /* RecordViewController.h */;
+		name = "RecordViewController.h: 13";
+		rLen = 0;
+		rLoc = 299;
+		rType = 0;
+		vrLen = 535;
+		vrLoc = 0;
+	};
+	09658D1C1403A4AB00391CD3 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 09658C921402663F00391CD3 /* RecordViewController.m */;
-		name = "RecordViewController.m: 63";
+		name = "RecordViewController.m: 143";
 		rLen = 0;
-		rLoc = 1565;
+		rLoc = 3716;
 		rType = 0;
-		vrLen = 1168;
-		vrLoc = 851;
+		vrLen = 1229;
+		vrLoc = 144;
 	};
-	09658CE81403906300391CD3 /* PBXTextBookmark */ = {
+	09658D321403B14F00391CD3 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 09658D2B1403A6F000391CD3 /* Film-Roll.png */;
+	};
+	09658D451403B68300391CD3 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 09658D2D1403B13100391CD3 /* Monitor.png */;
+	};
+	09658D881403BDFF00391CD3 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 09658C911402663F00391CD3 /* RecordViewController.h */;
-		name = "RecordViewController.h: 16";
+		fRef = 09658CB2140380F500391CD3 /* ListViewController.m */;
+		name = "ListViewController.m: 20";
 		rLen = 0;
-		rLoc = 305;
+		rLoc = 574;
 		rType = 0;
-		vrLen = 459;
+		vrLen = 1018;
 		vrLoc = 0;
 	};
-	09658CE91403906300391CD3 /* PBXTextBookmark */ = {
+	09658D901403BE5A00391CD3 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 09658C911402663F00391CD3 /* RecordViewController.h */;
-		name = "RecordViewController.h: 9";
+		fRef = 09658CB1140380F500391CD3 /* ListViewController.h */;
+		name = "ListViewController.h: 17";
 		rLen = 0;
-		rLoc = 171;
+		rLoc = 354;
 		rType = 0;
-		vrLen = 502;
+		vrLen = 361;
 		vrLoc = 0;
 	};
-	09658CEC1403907C00391CD3 /* PBXTextBookmark */ = {
+	09658DA71403C0B200391CD3 /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
-		fRef = 09658C911402663F00391CD3 /* RecordViewController.h */;
-		name = "RecordViewController.h: 16";
+		fRef = 09658CB2140380F500391CD3 /* ListViewController.m */;
+		name = "ListViewController.m: 67";
 		rLen = 0;
-		rLoc = 273;
+		rLoc = 1697;
 		rType = 0;
-		vrLen = 502;
-		vrLoc = 0;
-	};
-	09658CF7140391D000391CD3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 09658C911402663F00391CD3 /* RecordViewController.h */;
-		name = "RecordViewController.h: 14";
-		rLen = 0;
-		rLoc = 270;
-		rType = 0;
-		vrLen = 502;
-		vrLoc = 0;
-	};
-	09658CFB140391DA00391CD3 /* PBXTextBookmark */ = {
-		isa = PBXTextBookmark;
-		fRef = 09658C911402663F00391CD3 /* RecordViewController.h */;
-		name = "RecordViewController.h: 5";
-		rLen = 0;
-		rLoc = 68;
-		rType = 0;
-		vrLen = 502;
-		vrLoc = 0;
+		vrLen = 981;
+		vrLoc = 1443;
 	};
 	1D3623240D0F684500981E51 /* hybrebAppDelegate.h */ = {
 		uiCtxt = {
@@ -306,32 +191,6 @@
 		executables = (
 			09658C6E1402653C00391CD3 /* hybreb */,
 		);
-	};
-	28216C950DB411BC00E5133A /* FirstViewController.h */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.h;
-		name = FirstViewController.h;
-		path = /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/FirstViewController.h;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 547}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{0, 234}";
-		};
-	};
-	28216C960DB411BC00E5133A /* FirstViewController.m */ = {
-		isa = PBXFileReference;
-		fileEncoding = 4;
-		lastKnownFileType = sourcecode.c.objc;
-		name = FirstViewController.m;
-		path = /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/FirstViewController.m;
-		sourceTree = "<absolute>";
-		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1123, 845}}";
-			sepNavSelRange = "{0, 0}";
-			sepNavVisRange = "{543, 916}";
-		};
 	};
 	28A0AB4B0D9B1048005BE974 /* hybreb_Prefix.pch */ = {
 		uiCtxt = {
@@ -380,31 +239,19 @@
 			PBXWorkspaceStateSaveDate = 335701308;
 		};
 		perUserProjectItems = {
-			09658C971402669200391CD3 /* PBXTextBookmark */ = 09658C971402669200391CD3 /* PBXTextBookmark */;
 			09658C981402669200391CD3 /* PBXTextBookmark */ = 09658C981402669200391CD3 /* PBXTextBookmark */;
 			09658C991402669200391CD3 /* PBXTextBookmark */ = 09658C991402669200391CD3 /* PBXTextBookmark */;
-			09658C9A1402669200391CD3 /* PBXTextBookmark */ = 09658C9A1402669200391CD3 /* PBXTextBookmark */;
-			09658C9B1402669200391CD3 /* PBXTextBookmark */ = 09658C9B1402669200391CD3 /* PBXTextBookmark */;
-			09658C9C1402669200391CD3 /* PBXTextBookmark */ = 09658C9C1402669200391CD3 /* PBXTextBookmark */;
-			09658CB61403810200391CD3 /* PBXTextBookmark */ = 09658CB61403810200391CD3 /* PBXTextBookmark */;
-			09658CB71403810200391CD3 /* PBXTextBookmark */ = 09658CB71403810200391CD3 /* PBXTextBookmark */;
-			09658CB81403810200391CD3 /* PBXTextBookmark */ = 09658CB81403810200391CD3 /* PBXTextBookmark */;
-			09658CB91403810200391CD3 /* PBXTextBookmark */ = 09658CB91403810200391CD3 /* PBXTextBookmark */;
-			09658CBA1403810200391CD3 /* PBXTextBookmark */ = 09658CBA1403810200391CD3 /* PBXTextBookmark */;
-			09658CBB1403810200391CD3 /* PBXTextBookmark */ = 09658CBB1403810200391CD3 /* PBXTextBookmark */;
-			09658CC51403860300391CD3 /* PBXTextBookmark */ = 09658CC51403860300391CD3 /* PBXTextBookmark */;
 			09658CC61403860300391CD3 /* PBXTextBookmark */ = 09658CC61403860300391CD3 /* PBXTextBookmark */;
-			09658CC71403860300391CD3 /* PBXBookmark */ = 09658CC71403860300391CD3 /* PBXBookmark */;
-			09658CC81403860300391CD3 /* PBXBookmark */ = 09658CC81403860300391CD3 /* PBXBookmark */;
 			09658CE41403906300391CD3 /* PBXBookmark */ = 09658CE41403906300391CD3 /* PBXBookmark */;
 			09658CE51403906300391CD3 /* PBXBookmark */ = 09658CE51403906300391CD3 /* PBXBookmark */;
 			09658CE61403906300391CD3 /* PBXBookmark */ = 09658CE61403906300391CD3 /* PBXBookmark */;
-			09658CE71403906300391CD3 /* PBXTextBookmark */ = 09658CE71403906300391CD3 /* PBXTextBookmark */;
-			09658CE81403906300391CD3 /* PBXTextBookmark */ = 09658CE81403906300391CD3 /* PBXTextBookmark */;
-			09658CE91403906300391CD3 /* PBXTextBookmark */ = 09658CE91403906300391CD3 /* PBXTextBookmark */;
-			09658CEC1403907C00391CD3 /* PBXTextBookmark */ = 09658CEC1403907C00391CD3 /* PBXTextBookmark */;
-			09658CF7140391D000391CD3 /* PBXTextBookmark */ = 09658CF7140391D000391CD3 /* PBXTextBookmark */;
-			09658CFB140391DA00391CD3 /* PBXTextBookmark */ = 09658CFB140391DA00391CD3 /* PBXTextBookmark */;
+			09658D1B1403A4AB00391CD3 /* PBXTextBookmark */ = 09658D1B1403A4AB00391CD3 /* PBXTextBookmark */;
+			09658D1C1403A4AB00391CD3 /* PBXTextBookmark */ = 09658D1C1403A4AB00391CD3 /* PBXTextBookmark */;
+			09658D321403B14F00391CD3 /* PBXBookmark */ = 09658D321403B14F00391CD3 /* PBXBookmark */;
+			09658D451403B68300391CD3 /* PBXBookmark */ = 09658D451403B68300391CD3 /* PBXBookmark */;
+			09658D881403BDFF00391CD3 /* PBXTextBookmark */ = 09658D881403BDFF00391CD3 /* PBXTextBookmark */;
+			09658D901403BE5A00391CD3 /* PBXTextBookmark */ = 09658D901403BE5A00391CD3 /* PBXTextBookmark */;
+			09658DA71403C0B200391CD3 /* PBXTextBookmark */ = 09658DA71403C0B200391CD3 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 09658C7D1402654100391CD3 /* Source Control */;
 		userBuildSettings = {

@@ -10,7 +10,10 @@
 
 
 @interface ListViewController : UIViewController {
-
+	IBOutlet UITableView *videoTable;
+	NSMutableArray *listOfItems;
 }
+
+@property (nonatomic, retain) IBOutlet UITableView *videoTable;
 
 @end

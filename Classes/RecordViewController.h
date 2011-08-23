@@ -10,7 +10,7 @@
 #import <MobileCoreServices/UTCoreTypes.h>
 
 
-@interface RecordViewController : UIViewController {
+@interface RecordViewController : UIViewController<UIImagePickerControllerDelegate> {
 
 }
 

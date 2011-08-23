@@ -15,6 +15,8 @@
 		09658CCC1403881300391CD3 /* iphoneHeaderRetina.png in Resources */ = {isa = PBXBuildFile; fileRef = 09658CCB1403881300391CD3 /* iphoneHeaderRetina.png */; };
 		09658CD514038B5600391CD3 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 09658CD414038B5600391CD3 /* Default.png */; };
 		09658CDF1403905E00391CD3 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09658CDE1403905E00391CD3 /* MobileCoreServices.framework */; };
+		09658D2C1403A6F000391CD3 /* Film-Roll.png in Resources */ = {isa = PBXBuildFile; fileRef = 09658D2B1403A6F000391CD3 /* Film-Roll.png */; };
+		09658D2E1403B13100391CD3 /* Monitor.png in Resources */ = {isa = PBXBuildFile; fileRef = 09658D2D1403B13100391CD3 /* Monitor.png */; };
 		1D3623260D0F684500981E51 /* hybrebAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* hybrebAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -34,6 +36,8 @@
 		09658CCB1403881300391CD3 /* iphoneHeaderRetina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = iphoneHeaderRetina.png; sourceTree = "<group>"; };
 		09658CD414038B5600391CD3 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		09658CDE1403905E00391CD3 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		09658D2B1403A6F000391CD3 /* Film-Roll.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Film-Roll.png"; sourceTree = "<group>"; };
+		09658D2D1403B13100391CD3 /* Monitor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Monitor.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* hybrebAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hybrebAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* hybrebAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = hybrebAppDelegate.m; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 		09658CCD1403881B00391CD3 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				09658D2D1403B13100391CD3 /* Monitor.png */,
+				09658D2B1403A6F000391CD3 /* Film-Roll.png */,
 				09658CD414038B5600391CD3 /* Default.png */,
 				09658CC9140386F100391CD3 /* iphoneLoadThingy.png */,
 				09658CCB1403881300391CD3 /* iphoneHeaderRetina.png */,
@@ -191,6 +197,8 @@
 				09658CCA140386F100391CD3 /* iphoneLoadThingy.png in Resources */,
 				09658CCC1403881300391CD3 /* iphoneHeaderRetina.png in Resources */,
 				09658CD514038B5600391CD3 /* Default.png in Resources */,
+				09658D2C1403A6F000391CD3 /* Film-Roll.png in Resources */,
+				09658D2E1403B13100391CD3 /* Monitor.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

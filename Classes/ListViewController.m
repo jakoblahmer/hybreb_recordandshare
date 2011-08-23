@@ -11,6 +11,8 @@
 
 @implementation ListViewController
 
+@synthesize videoTable;
+
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -22,12 +24,22 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
+	
+	listOfItems = [[NSMutableArray alloc] init];
+	
+	[listOfItems addObject:@"test1"];
+	[listOfItems addObject:@"test2"];
+	[listOfItems addObject:@"test3"];
+	[listOfItems addObject:@"test4"];
+	
+	self.navigationItem.title = @"Videos";
+	
     [super viewDidLoad];
 }
-*/
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -51,7 +63,32 @@
 }
 
 
+
+// return number of elements in table
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	return [listOfItems count];
+}
+
+
+// views one row
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	static NSString *CellIdentifier = @"Cell";
+	
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	if (cell == nil) {
+		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+	}
+	
+	// Set up the cell...
+	NSString *cellValue = [listOfItems objectAtIndex:indexPath.row];
+	cell.textLabel.text = cellValue;
+	
+	return cell;
+}
+
 - (void)dealloc {
+	[listOfItems release];
     [super dealloc];
 }
 
