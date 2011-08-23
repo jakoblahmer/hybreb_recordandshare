@@ -87,9 +87,9 @@
 	};
 	09658CB2140380F500391CD3 /* ListViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1139, 1261}}";
-			sepNavSelRange = "{1656, 0}";
-			sepNavVisRange = "{1443, 981}";
+			sepNavIntBoundsRect = "{{0, 0}, {1139, 1287}}";
+			sepNavSelRange = "{238, 0}";
+			sepNavVisRange = "{0, 1017}";
 		};
 	};
 	09658CC61403860300391CD3 /* PBXTextBookmark */ = {
