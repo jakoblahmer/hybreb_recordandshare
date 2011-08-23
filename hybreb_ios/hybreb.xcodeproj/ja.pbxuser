@@ -88,7 +88,7 @@
 	09658CB2140380F500391CD3 /* ListViewController.m */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1139, 1261}}";
-			sepNavSelRange = "{1697, 0}";
+			sepNavSelRange = "{1656, 0}";
 			sepNavVisRange = "{1443, 981}";
 		};
 	};
@@ -172,6 +172,26 @@
 		vrLen = 981;
 		vrLoc = 1443;
 	};
+	09E3A5E214043362005E7759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 09658CB2140380F500391CD3 /* ListViewController.m */;
+		name = "ListViewController.m: 67";
+		rLen = 0;
+		rLoc = 1697;
+		rType = 0;
+		vrLen = 975;
+		vrLoc = 1443;
+	};
+	09E3A5ED1404336E005E7759 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 09658CB2140380F500391CD3 /* ListViewController.m */;
+		name = "ListViewController.m: 63";
+		rLen = 0;
+		rLoc = 1656;
+		rType = 0;
+		vrLen = 981;
+		vrLoc = 1443;
+	};
 	1D3623240D0F684500981E51 /* hybrebAppDelegate.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1123, 472}}";
@@ -203,7 +223,7 @@
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
 		activeBuildConfigurationName = Debug;
 		activeExecutable = 09658C6E1402653C00391CD3 /* hybreb */;
-		activeSDKPreference = iphoneos4.3;
+		activeSDKPreference = iphonesimulator4.3;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* hybreb */;
 		addToTargets = (
 			1D6058900D05DD3D006BFB54 /* hybreb */,
@@ -220,7 +240,7 @@
 					20,
 					945,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 					20,
@@ -235,23 +255,25 @@
 					PBXFileDataSource_Target_ColumnID,
 				);
 			};
-			PBXPerProjectTemplateStateSaveDate = 335701308;
-			PBXWorkspaceStateSaveDate = 335701308;
+			PBXPerProjectTemplateStateSaveDate = 335819605;
+			PBXWorkspaceStateSaveDate = 335819605;
 		};
 		perUserProjectItems = {
-			09658C981402669200391CD3 /* PBXTextBookmark */ = 09658C981402669200391CD3 /* PBXTextBookmark */;
-			09658C991402669200391CD3 /* PBXTextBookmark */ = 09658C991402669200391CD3 /* PBXTextBookmark */;
-			09658CC61403860300391CD3 /* PBXTextBookmark */ = 09658CC61403860300391CD3 /* PBXTextBookmark */;
-			09658CE41403906300391CD3 /* PBXBookmark */ = 09658CE41403906300391CD3 /* PBXBookmark */;
-			09658CE51403906300391CD3 /* PBXBookmark */ = 09658CE51403906300391CD3 /* PBXBookmark */;
-			09658CE61403906300391CD3 /* PBXBookmark */ = 09658CE61403906300391CD3 /* PBXBookmark */;
-			09658D1B1403A4AB00391CD3 /* PBXTextBookmark */ = 09658D1B1403A4AB00391CD3 /* PBXTextBookmark */;
-			09658D1C1403A4AB00391CD3 /* PBXTextBookmark */ = 09658D1C1403A4AB00391CD3 /* PBXTextBookmark */;
-			09658D321403B14F00391CD3 /* PBXBookmark */ = 09658D321403B14F00391CD3 /* PBXBookmark */;
-			09658D451403B68300391CD3 /* PBXBookmark */ = 09658D451403B68300391CD3 /* PBXBookmark */;
-			09658D881403BDFF00391CD3 /* PBXTextBookmark */ = 09658D881403BDFF00391CD3 /* PBXTextBookmark */;
-			09658D901403BE5A00391CD3 /* PBXTextBookmark */ = 09658D901403BE5A00391CD3 /* PBXTextBookmark */;
-			09658DA71403C0B200391CD3 /* PBXTextBookmark */ = 09658DA71403C0B200391CD3 /* PBXTextBookmark */;
+			09658C981402669200391CD3 = 09658C981402669200391CD3 /* PBXTextBookmark */;
+			09658C991402669200391CD3 = 09658C991402669200391CD3 /* PBXTextBookmark */;
+			09658CC61403860300391CD3 = 09658CC61403860300391CD3 /* PBXTextBookmark */;
+			09658CE41403906300391CD3 = 09658CE41403906300391CD3 /* PBXBookmark */;
+			09658CE51403906300391CD3 = 09658CE51403906300391CD3 /* PBXBookmark */;
+			09658CE61403906300391CD3 = 09658CE61403906300391CD3 /* PBXBookmark */;
+			09658D1B1403A4AB00391CD3 = 09658D1B1403A4AB00391CD3 /* PBXTextBookmark */;
+			09658D1C1403A4AB00391CD3 = 09658D1C1403A4AB00391CD3 /* PBXTextBookmark */;
+			09658D321403B14F00391CD3 = 09658D321403B14F00391CD3 /* PBXBookmark */;
+			09658D451403B68300391CD3 = 09658D451403B68300391CD3 /* PBXBookmark */;
+			09658D881403BDFF00391CD3 = 09658D881403BDFF00391CD3 /* PBXTextBookmark */;
+			09658D901403BE5A00391CD3 = 09658D901403BE5A00391CD3 /* PBXTextBookmark */;
+			09658DA71403C0B200391CD3 = 09658DA71403C0B200391CD3 /* PBXTextBookmark */;
+			09E3A5E214043362005E7759 /* PBXTextBookmark */ = 09E3A5E214043362005E7759 /* PBXTextBookmark */;
+			09E3A5ED1404336E005E7759 /* PBXTextBookmark */ = 09E3A5ED1404336E005E7759 /* PBXTextBookmark */;
 		};
 		sourceControlManager = 09658C7D1402654100391CD3 /* Source Control */;
 		userBuildSettings = {

@@ -1,0 +1,951 @@
+Thybreb
+v7
+r0
+t335790225.156178
+cCheck dependencies
+cCpResource build/Debug-iphoneos/hybreb.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+cProcessInfoPlistFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Info.plist hybreb-Info.plist
+cCompileXIB /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/MainWindow.xib
+cCompileXIB /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordView.xib
+cCompileXIB /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListView.xib
+cCopyPNGFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/iphoneLoadThingy.png iphoneLoadThingy.png
+cCopyPNGFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/iphoneHeaderRetina.png iphoneHeaderRetina.png
+cCopyPNGFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Default.png Default.png
+cCopyPNGFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Film-Roll.png Film-Roll.png
+cCopyPNGFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Monitor.png Monitor.png
+cProcessPCH /var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-fyvwhbbvxhanbqexyabpzlxpxjnx/hybreb_Prefix.pch.gch hybreb_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cProcessPCH /var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-fkuwwbkexnwgztgagfcxucjyqlbb/hybreb_Prefix.pch.gch hybreb_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/main.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybrebAppDelegate.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/hybrebAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/RecordViewController.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/ListViewController.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/main.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybrebAppDelegate.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/hybrebAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/RecordViewController.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/ListViewController.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybreb normal armv6
+cLd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybreb normal armv7
+cCreateUniversalBinary /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/hybreb normal "armv6 armv7"
+cGenerateDSYMFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app.dSYM /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/hybreb
+cProcessProductPackaging "/Users/ja/Library/MobileDevice/Provisioning Profiles/583C0CC4-EA0D-4461-9421-1449E93A7E09.mobileprovision" /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/embedded.mobileprovision
+cTouch /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb.xcent
+cCodeSign /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk
+c000000004D7401890000000000000110
+t1299448201
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist
+c000000004D4F6A4700000000000001A7
+t1297050183
+s423
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+c000000004D4F6A4700000000000001E5
+t1297050183
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004D54D18C00000000003532A0
+t1297404300
+s3486368
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004D54D1F500000000003E22F0
+t1297404405
+s4072176
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004D54D1DD0000000000001466
+t1297404381
+s5222
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/MobileCoreServices.framework/Headers/UTCoreTypes.h
+c000000004D54D32C000000000000520D
+t1297404716
+s21005
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c000000004D54D32D0000000000094C50
+t1297404717
+s609360
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004D5A28AB0000000000000AA1
+t1297754283
+s2721
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004D5A292A0000000000CA2AE0
+t1297754410
+s13249248
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/FirstViewController.h
+c000000004E522DBC00000000000000EA
+t1314008508
+s234
+i<UIKit/UIKit.h>
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/FirstViewController.m
+c000000004E522DBC00000000000005B3
+t1314008508
+s1459
+i"FirstViewController.h"
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListView.xib
+c000000004E53871600000000000057C0
+t1314096918
+s22464
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListViewController.h
+c000000004E53868A0000000000000169
+t1314096778
+s361
+i<UIKit/UIKit.h>
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListViewController.m
+c000000004E53892E0000000000000978
+t1314097454
+s2424
+i"ListViewController.h"
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordView.xib
+c000000004E537A740000000000006232
+t1314093684
+s25138
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.h
+c000000004E536CD90000000000000217
+t1314090201
+s535
+i<UIKit/UIKit.h>
+i<MobileCoreServices/UTCoreTypes.h>
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m
+c000000004E536D1B0000000000000EB7
+t1314090267
+s3767
+i"RecordViewController.h"
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/hybrebAppDelegate.h
+c000000004E522DBC00000000000001D7
+t1314008508
+s471
+i<UIKit/UIKit.h>
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/hybrebAppDelegate.m
+c000000004E522DBC0000000000000C51
+t1314008508
+s3153
+i"hybrebAppDelegate.h"
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Default.png
+c000000004E534F2E0000000000050EF4
+t1314082606
+s331508
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Film-Roll.png
+c000000004A47F1460000000000000EFB
+t1246228806
+s3835
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/FirstView.xib
+c000000004E522DBC00000000000049D0
+t1314008508
+s18896
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/MainWindow.xib
+c000000004E5386B300000000000071D7
+t1314096819
+s29143
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Monitor.png
+c000000004A47F14A0000000000000EC6
+t1246228810
+s3782
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/SecondView.xib
+c000000004E522DBC00000000000049CE
+t1314008508
+s18894
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app
+t1314097425
+s578
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app.dSYM
+t1314097424
+s102
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Default.png
+t1314085367
+s352705
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Film-Roll.png
+t1314096950
+s4010
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/FirstView.nib
+t2
+s0
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Info.plist
+t1314085363
+s835
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/ListView.nib
+t1314096950
+s2530
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/MainWindow.nib
+t1314096949
+s3315
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Monitor.png
+t1314096950
+s4004
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/PkgInfo
+t1314085363
+s8
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/RecordView.nib
+t1314096949
+s4162
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/ResourceRules.plist
+t1314085363
+s485
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/SecondView.nib
+t2
+s0
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/embedded.mobileprovision
+t1314085374
+s7456
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/hybreb
+t1314097424
+s68144
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/iphoneHeaderRetina.png
+t1314085367
+s30891
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/iphoneLoadThingy.png
+t1314085367
+s352705
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/FirstViewController.o
+t2
+s0
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/ListViewController.o
+t1314097424
+s43836
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/RecordViewController.o
+t1314096950
+s48020
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybreb
+t1314097424
+s24924
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybreb.LinkFileList
+c000000004E5359F30000000000000243
+t1314085363
+s579
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybrebAppDelegate.o
+t1314085372
+s54180
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/main.o
+t1314085372
+s6488
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/FirstViewController.o
+t2
+s0
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/ListViewController.o
+t1314097424
+s43700
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/RecordViewController.o
+t1314096950
+s47920
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybreb
+t1314097424
+s25124
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybreb.LinkFileList
+c000000004E5359F30000000000000243
+t1314085363
+s579
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybrebAppDelegate.o
+t1314085372
+s54068
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/main.o
+t1314085372
+s6472
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb.xcent
+t1314085374
+s623
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/hybreb_Prefix.pch
+c000000004E522DBC00000000000000B5
+t1314008508
+s181
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/iphoneHeaderRetina.png
+c000000004E53508000000000000074AD
+t1314082944
+s29869
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/iphoneLoadThingy.png
+c000000004E534F2E0000000000050EF4
+t1314082606
+s331508
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/main.m
+c000000004E522DBC0000000000000165
+t1314008508
+s357
+i<UIKit/UIKit.h>
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/ListView.xib
+c000000004E53871600000000000057C0
+t1314096918
+s22464
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/ListViewController.h
+c000000004E53868A0000000000000169
+t1314096778
+s361
+i<UIKit/UIKit.h>
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/ListViewController.m
+c000000004E53892E0000000000000978
+t1314097454
+s2424
+i"ListViewController.h"
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/RecordView.xib
+c000000004E537A740000000000006232
+t1314093684
+s25138
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/RecordViewController.h
+c000000004E536CD90000000000000217
+t1314090201
+s535
+i<UIKit/UIKit.h>
+i<MobileCoreServices/UTCoreTypes.h>
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/RecordViewController.m
+c000000004E536D1B0000000000000EB7
+t1314090267
+s3767
+i"RecordViewController.h"
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/hybrebAppDelegate.h
+c000000004E522DBC00000000000001D7
+t1314008508
+s471
+i<UIKit/UIKit.h>
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/hybrebAppDelegate.m
+c000000004E522DBC0000000000000C51
+t1314008508
+s3153
+i"hybrebAppDelegate.h"
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Default.png
+c000000004E534F2E0000000000050EF4
+t1314082606
+s331508
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Film-Roll.png
+c000000004A47F1460000000000000EFB
+t1246228806
+s3835
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/MainWindow.xib
+c000000004E5386B300000000000071D7
+t1314096819
+s29143
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Monitor.png
+c000000004A47F14A0000000000000EC6
+t1246228810
+s3782
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app
+t1314097425
+s578
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app.dSYM
+t1314097424
+s102
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/Default.png
+t1314085367
+s352705
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/Film-Roll.png
+t1314096950
+s4010
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/Info.plist
+t1314085363
+s835
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/ListView.nib
+t1314096950
+s2530
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/MainWindow.nib
+t1314096949
+s3315
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/Monitor.png
+t1314096950
+s4004
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/PkgInfo
+t1314085363
+s8
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/RecordView.nib
+t1314096949
+s4162
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/ResourceRules.plist
+t1314085363
+s485
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/embedded.mobileprovision
+t1314085374
+s7456
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/hybreb
+t1314097424
+s68144
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/iphoneHeaderRetina.png
+t1314085367
+s30891
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/iphoneLoadThingy.png
+t1314085367
+s352705
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/ListViewController.o
+t1314097424
+s43836
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/RecordViewController.o
+t1314096950
+s48020
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybreb
+t1314097424
+s24924
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybreb.LinkFileList
+c000000004E5359F30000000000000243
+t1314085363
+s579
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybrebAppDelegate.o
+t1314085372
+s54180
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/main.o
+t1314085372
+s6488
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/ListViewController.o
+t1314097424
+s43700
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/RecordViewController.o
+t1314096950
+s47920
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybreb
+t1314097424
+s25124
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybreb.LinkFileList
+c000000004E5359F30000000000000243
+t1314085363
+s579
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybrebAppDelegate.o
+t1314085372
+s54068
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/main.o
+t1314085372
+s6472
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/hybreb_Prefix.pch
+c000000004E522DBC00000000000000B5
+t1314008508
+s181
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/iphoneHeaderRetina.png
+c000000004E53508000000000000074AD
+t1314082944
+s29869
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/iphoneLoadThingy.png
+c000000004E534F2E0000000000050EF4
+t1314082606
+s331508
+
+N/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/main.m
+c000000004E522DBC0000000000000165
+t1314008508
+s357
+i<UIKit/UIKit.h>
+
+N/Users/ja/Library/MobileDevice/Provisioning Profiles/583C0CC4-EA0D-4461-9421-1449E93A7E09.mobileprovision
+c000000004E4300D10000000000001D20
+t1313013969
+s7456
+
+N/var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-egoujeamzpxyfgakmjkmktfyvzyd/hybreb_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-ehhrpslmdqzeaifcvznjirundghs/hybreb_Prefix.pch.gch
+t2
+s0
+
+N/var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-fkuwwbkexnwgztgagfcxucjyqlbb/hybreb_Prefix.pch.gch
+t1314085370
+s10647452
+
+N/var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-fyvwhbbvxhanbqexyabpzlxpxjnx/hybreb_Prefix.pch.gch
+t1314085371
+s10184604
+
+Nhybreb-Info.plist
+c000000004E522DBC000000000000038D
+t1314008508
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies335790224#335790224#0(0"0(0#1#0"8655379712#0"0#
+
+CCodeSign /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app
+s335790224.579599
+e335790225.156141
+r1
+xCodeSign
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app
+lSLF07#2@40"CodeSign build/Debug-iphoneos/hybreb.app335790224#335790225#0(0"0(0#0#90"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app8655408032#722"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Karl Lahmer (4EAVB6M94L)" --resource-rules=/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/ResourceRules.plist --entitlements /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb.xcent /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app0#
+
+CCodeSign /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app
+r0
+
+CCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/FirstViewController.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/FirstViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/ListViewController.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s335790224.136819
+e335790224.254499
+r1
+xCompileC
+xbuild/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/ListViewController.o
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@95"Compile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListViewController.m335790224#335790224#0(0"0(0#0#87"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListViewController.m8650981376#1960"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-generated-files.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-own-target-headers.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-all-target-headers.hmap -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-project-headers.hmap -F/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/include -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources/armv6 -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources -include /var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-fyvwhbbvxhanbqexyabpzlxpxjnx/hybreb_Prefix.pch -c /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListViewController.m -o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/ListViewController.o0#
+
+CCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/ListViewController.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/ListViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/RecordViewController.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s335789750.358042
+e335789750.565336
+r1
+xCompileC
+xbuild/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/RecordViewController.o
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m: In function '-[RecordViewController recordButtonPressed:]':
+o/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:58: warning: class 'RecordViewController' does not implement the 'UINavigationControllerDelegate' protocol
+o/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m: In function '-[RecordViewController imagePickerController:didFinishPickingMediaWithInfo:]':
+o/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:121: warning: unused variable 'imageToSave'
+o/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:121: warning: unused variable 'editedImage'
+o/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:121: warning: unused variable 'originalImage'
+lSLF07#2@97"Compile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m335789750#335789750#0(935"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m: In function '-[RecordViewController recordButtonPressed:]':/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:58: warning: class 'RecordViewController' does not implement the 'UINavigationControllerDelegate' protocol/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m: In function '-[RecordViewController imagePickerController:didFinishPickingMediaWithInfo:]':/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:121: warning: unused variable 'imageToSave'/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:121: warning: unused variable 'editedImage'/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:121: warning: unused variable 'originalImage'4(22@93"Class 'RecordViewController' does not implement the 'UINavigationControllerDelegate' protocol335789750#151#197#0(6@89"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m335783067#58#0#58#0#45"class '*' does not implement the '*' protocol0(22@29"Unused variable 'imageToSave'335789750#531#134#0(6@89"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m335783067#121#0#121#0#19"unused variable '*'0(22@29"Unused variable 'editedImage'335789750#665#134#0(6@89"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m335783067#121#0#121#0#19"unused variable '*'0(22@31"Unused variable 'originalImage'335789750#799#136#0(6@89"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m335783067#121#0#121#0#19"unused variable '*'0(0#0#89"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m8642338432#1964"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-generated-files.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-own-target-headers.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-all-target-headers.hmap -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-project-headers.hmap -F/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/include -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources/armv6 -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources -include /var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-fyvwhbbvxhanbqexyabpzlxpxjnx/hybreb_Prefix.pch -c /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m -o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/RecordViewController.o0#
+
+CCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/RecordViewController.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/RecordViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybrebAppDelegate.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/hybrebAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s335778171.945543
+e335778172.047506
+r1
+xCompileC
+xbuild/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybrebAppDelegate.o
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/hybrebAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@94"Compile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/hybrebAppDelegate.m335778171#335778172#0(0"0(0#0#86"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/hybrebAppDelegate.m8622030080#1958"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-generated-files.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-own-target-headers.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-all-target-headers.hmap -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-project-headers.hmap -F/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/include -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources/armv6 -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources -include /var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-fyvwhbbvxhanbqexyabpzlxpxjnx/hybreb_Prefix.pch -c /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/hybrebAppDelegate.m -o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybrebAppDelegate.o0#
+
+CCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybrebAppDelegate.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/hybrebAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/main.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s335778171.944602
+e335778172.019376
+r1
+xCompileC
+xbuild/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/main.o
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/main.m335778171#335778172#0(0"0(0#0#65"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/main.m8622320864#1924"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-generated-files.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-own-target-headers.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-all-target-headers.hmap -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-project-headers.hmap -F/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/include -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources/armv6 -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources -include /var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-fyvwhbbvxhanbqexyabpzlxpxjnx/hybreb_Prefix.pch -c /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/main.m -o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/main.o0#
+
+CCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/main.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/FirstViewController.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/FirstViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/ListViewController.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s335790224.176889
+e335790224.255550
+r1
+xCompileC
+xbuild/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/ListViewController.o
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@95"Compile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListViewController.m335790224#335790224#0(0"0(0#0#87"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListViewController.m8657199680#1960"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-generated-files.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-own-target-headers.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-all-target-headers.hmap -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-project-headers.hmap -F/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/include -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources/armv7 -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources -include /var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-fkuwwbkexnwgztgagfcxucjyqlbb/hybreb_Prefix.pch -c /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListViewController.m -o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/ListViewController.o0#
+
+CCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/ListViewController.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/ListViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/RecordViewController.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s335789750.562739
+e335789750.634323
+r1
+xCompileC
+xbuild/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/RecordViewController.o
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m: In function '-[RecordViewController recordButtonPressed:]':
+o/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:58: warning: class 'RecordViewController' does not implement the 'UINavigationControllerDelegate' protocol
+o/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m: In function '-[RecordViewController imagePickerController:didFinishPickingMediaWithInfo:]':
+o/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:121: warning: unused variable 'imageToSave'
+o/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:121: warning: unused variable 'editedImage'
+o/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:121: warning: unused variable 'originalImage'
+lSLF07#2@97"Compile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m335789750#335789750#0(935"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m: In function '-[RecordViewController recordButtonPressed:]':/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:58: warning: class 'RecordViewController' does not implement the 'UINavigationControllerDelegate' protocol/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m: In function '-[RecordViewController imagePickerController:didFinishPickingMediaWithInfo:]':/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:121: warning: unused variable 'imageToSave'/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:121: warning: unused variable 'editedImage'/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:121: warning: unused variable 'originalImage'4(22@93"Class 'RecordViewController' does not implement the 'UINavigationControllerDelegate' protocol335789750#151#197#0(6@89"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m335783067#58#0#58#0#45"class '*' does not implement the '*' protocol0(22@29"Unused variable 'imageToSave'335789750#531#134#0(6@89"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m335783067#121#0#121#0#19"unused variable '*'0(22@29"Unused variable 'editedImage'335789750#665#134#0(6@89"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m335783067#121#0#121#0#19"unused variable '*'0(22@31"Unused variable 'originalImage'335789750#799#136#0(6@89"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m335783067#121#0#121#0#19"unused variable '*'0(0#0#89"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m8632216320#1964"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-generated-files.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-own-target-headers.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-all-target-headers.hmap -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-project-headers.hmap -F/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/include -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources/armv7 -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources -include /var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-fkuwwbkexnwgztgagfcxucjyqlbb/hybreb_Prefix.pch -c /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m -o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/RecordViewController.o0#
+
+CCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/RecordViewController.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/RecordViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybrebAppDelegate.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/hybrebAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s335778172.179433
+e335778172.250641
+r1
+xCompileC
+xbuild/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybrebAppDelegate.o
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/hybrebAppDelegate.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@94"Compile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/hybrebAppDelegate.m335778172#335778172#0(0"0(0#0#86"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/hybrebAppDelegate.m8621867008#1958"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-generated-files.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-own-target-headers.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-all-target-headers.hmap -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-project-headers.hmap -F/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/include -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources/armv7 -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources -include /var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-fkuwwbkexnwgztgagfcxucjyqlbb/hybreb_Prefix.pch -c /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/hybrebAppDelegate.m -o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybrebAppDelegate.o0#
+
+CCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybrebAppDelegate.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/hybrebAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/main.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+s335778172.120932
+e335778172.179343
+r1
+xCompileC
+xbuild/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/main.o
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/main.m
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@73"Compile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/main.m335778172#335778172#0(0"0(0#0#65"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/main.m8622426752#1924"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-generated-files.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-own-target-headers.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-all-target-headers.hmap -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-project-headers.hmap -F/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/include -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources/armv7 -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources -include /var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-fkuwwbkexnwgztgagfcxucjyqlbb/hybreb_Prefix.pch -c /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/main.m -o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/main.o0#
+
+CCompileC build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/main.o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileXIB /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListView.xib
+s335789749.922197
+e335789750.357579
+r1
+xCompileXIB
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListView.xib
+lSLF07#2@31"CompileXIB Classes/ListView.xib335789749#335789750#0(0"0(0#0#79"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListView.xib8635080736#605"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/ListView.nib /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/ListView.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCompileXIB /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordView.xib
+s335789749.503571
+e335789750.000608
+r1
+xCompileXIB
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordView.xib
+lSLF07#2@33"CompileXIB Classes/RecordView.xib335789749#335789750#0(0"0(0#0#81"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordView.xib8632337984#609"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/RecordView.nib /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordView.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCompileXIB /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/FirstView.xib
+r0
+
+CCompileXIB /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/MainWindow.xib
+s335789749.502768
+e335789749.922112
+r1
+xCompileXIB
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib335789749#335789749#0(0"0(0#0#73"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/MainWindow.xib8633635680#601"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/MainWindow.nib /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk0#
+
+CCompileXIB /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/SecondView.xib
+r0
+
+CCompileXIB /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/ListView.xib
+r0
+
+CCompileXIB /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/RecordView.xib
+r0
+
+CCompileXIB /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/MainWindow.xib
+r0
+
+CCopyPNGFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Default.png Default.png
+s335778167.336079
+e335778167.535202
+r1
+xCopyPNGFile
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Default.png
+xDefault.png
+lSLF07#2@67"CopyPNGFile build/Debug-iphoneos/hybreb.app/Default.png Default.png335778167#335778167#0(0"0(0#0#70"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Default.png8590251616#521"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Default.png /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Default.png0#
+
+CCopyPNGFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Film-Roll.png Film-Roll.png
+s335789750.000857
+e335789750.278390
+r1
+xCopyPNGFile
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Film-Roll.png
+xFilm-Roll.png
+lSLF07#2@71"CopyPNGFile build/Debug-iphoneos/hybreb.app/Film-Roll.png Film-Roll.png335789750#335789750#0(0"0(0#0#72"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Film-Roll.png8651019392#525"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Film-Roll.png /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Film-Roll.png0#
+
+CCopyPNGFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Monitor.png Monitor.png
+s335789750.278473
+e335789750.314861
+r1
+xCopyPNGFile
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Monitor.png
+xMonitor.png
+lSLF07#2@67"CopyPNGFile build/Debug-iphoneos/hybreb.app/Monitor.png Monitor.png335789750#335789750#0(0"0(0#0#70"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Monitor.png8640602240#521"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Monitor.png /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Monitor.png0#
+
+CCopyPNGFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/iphoneHeaderRetina.png iphoneHeaderRetina.png
+s335778167.216980
+e335778167.335991
+r1
+xCopyPNGFile
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/iphoneHeaderRetina.png
+xiphoneHeaderRetina.png
+lSLF07#2@89"CopyPNGFile build/Debug-iphoneos/hybreb.app/iphoneHeaderRetina.png iphoneHeaderRetina.png335778167#335778167#0(0"0(0#0#81"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/iphoneHeaderRetina.png8619932736#543"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/iphoneHeaderRetina.png /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/iphoneHeaderRetina.png0#
+
+CCopyPNGFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/iphoneLoadThingy.png iphoneLoadThingy.png
+s335778166.781798
+e335778167.447390
+r1
+xCopyPNGFile
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/iphoneLoadThingy.png
+xiphoneLoadThingy.png
+lSLF07#2@85"CopyPNGFile build/Debug-iphoneos/hybreb.app/iphoneLoadThingy.png iphoneLoadThingy.png335778166#335778167#0(0"0(0#0#79"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/iphoneLoadThingy.png8619791264#539"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/iphoneLoadThingy.png /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/iphoneLoadThingy.png0#
+
+CCopyPNGFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/Default.png Default.png
+r0
+
+CCopyPNGFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/Film-Roll.png Film-Roll.png
+r0
+
+CCopyPNGFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/Monitor.png Monitor.png
+r0
+
+CCopyPNGFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/iphoneHeaderRetina.png iphoneHeaderRetina.png
+r0
+
+CCopyPNGFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/iphoneLoadThingy.png iphoneLoadThingy.png
+r0
+
+CCpResource build/Debug-iphoneos/hybreb.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+s335778163.380908
+e335778163.542536
+r1
+xCpResource
+xbuild/Debug-iphoneos/hybreb.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist335778163#335778163#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist8619186368#533"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/ResourceRules.plist /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app0#
+
+CCreateUniversalBinary /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/hybreb normal "armv6 armv7"
+s335790224.376756
+e335790224.379441
+r1
+xCreateUniversalBinary
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/hybreb
+xnormal
+xarmv6 armv7
+lSLF07#2@81"CreateUniversalBinary build/Debug-iphoneos/hybreb.app/hybreb normal "armv6 armv7"335790224#335790224#0(0"0(0#0#70"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/armv6 armv78655257568#590"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/lipo -create /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybreb /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybreb -output /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/hybreb0#
+
+CCreateUniversalBinary /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/hybreb normal "armv6 armv7"
+r0
+
+CGenerateDSYMFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app.dSYM /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/hybreb
+s335790224.379502
+e335790224.574712
+r1
+xGenerateDSYMFile
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app.dSYM
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/hybreb
+lSLF07#2@92"GenerateDSYMFile build/Debug-iphoneos/hybreb.app.dSYM build/Debug-iphoneos/hybreb.app/hybreb335790224#335790224#0(0"0(0#0#97"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/hybreb8650975264#419"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/hybreb -o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app.dSYM0#
+
+CGenerateDSYMFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app.dSYM /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/hybreb
+r0
+
+CLd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybreb normal armv6
+s335790224.254585
+e335790224.376420
+r1
+xLd
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybreb
+xnormal
+xarmv6
+lSLF07#2@138"Link /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybreb335790224#335790224#0(0"0(0#0#0"8656728288#983"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -L/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos -F/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos -filelist /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybreb.LinkFileList -dead_strip -miphoneos-version-min=4.3 -framework Foundation -framework UIKit -framework CoreGraphics -framework MobileCoreServices -o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybreb0#
+
+CLd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybreb normal armv7
+s335790224.255607
+e335790224.376689
+r1
+xLd
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybreb
+xnormal
+xarmv7
+lSLF07#2@138"Link /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybreb335790224#335790224#0(0"0(0#0#0"8656468608#983"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv IPHONEOS_DEPLOYMENT_TARGET 4.3    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -L/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos -F/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos -filelist /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybreb.LinkFileList -dead_strip -miphoneos-version-min=4.3 -framework Foundation -framework UIKit -framework CoreGraphics -framework MobileCoreServices -o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybreb0#
+
+CLd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv6/hybreb normal armv6
+r0
+
+CLd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/hybreb.build/Debug-iphoneos/hybreb.build/Objects-normal/armv7/hybreb normal armv7
+r0
+
+CProcessInfoPlistFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Info.plist hybreb-Info.plist
+s335778163.381872
+e335778163.465363
+r1
+xProcessInfoPlistFile
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Info.plist
+xhybreb-Info.plist
+lSLF07#2@25"Process hybreb-Info.plist335778163#335778163#0(0"0(0#0#76"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/hybreb-Info.plist8619094272#638"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility hybreb-Info.plist -genpkginfo /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/ResourceRules.plist -o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/Info.plist0#
+
+CProcessInfoPlistFile /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/Info.plist hybreb-Info.plist
+r0
+
+CProcessPCH /var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-egoujeamzpxyfgakmjkmktfyvzyd/hybreb_Prefix.pch.gch hybreb_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-ehhrpslmdqzeaifcvznjirundghs/hybreb_Prefix.pch.gch hybreb_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH /var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-fkuwwbkexnwgztgagfcxucjyqlbb/hybreb_Prefix.pch.gch hybreb_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
+s335778167.536145
+e335778171.361142
+r1
+xProcessPCH
+x/var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-fkuwwbkexnwgztgagfcxucjyqlbb/hybreb_Prefix.pch.gch
+xhybreb_Prefix.pch
+xnormal
+xarmv7
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@28"Precompile hybreb_Prefix.pch335778167#335778171#0(0"0(0#0#76"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/hybreb_Prefix.pch8613353728#1803"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-generated-files.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-own-target-headers.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-all-target-headers.hmap -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-project-headers.hmap -F/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/include -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources/armv7 -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources -c /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/hybreb_Prefix.pch -o /var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-fkuwwbkexnwgztgagfcxucjyqlbb/hybreb_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-fyvwhbbvxhanbqexyabpzlxpxjnx/hybreb_Prefix.pch.gch hybreb_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s335778167.535314
+e335778171.944509
+r1
+xProcessPCH
+x/var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-fyvwhbbvxhanbqexyabpzlxpxjnx/hybreb_Prefix.pch.gch
+xhybreb_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@28"Precompile hybreb_Prefix.pch335778167#335778171#0(0"0(0#0#76"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/hybreb_Prefix.pch8619259808#1803"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.3 -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-generated-files.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-own-target-headers.hmap -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-all-target-headers.hmap -iquote /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb-project-headers.hmap -F/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/include -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources/armv6 -I/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/DerivedSources -c /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/hybreb_Prefix.pch -o /var/folders/zK/zKLclXjdEDW-da91b-LbDE+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/hybreb_Prefix-fyvwhbbvxhanbqexyabpzlxpxjnx/hybreb_Prefix.pch.gch0#
+
+CProcessProductPackaging "/Users/ja/Library/MobileDevice/Provisioning Profiles/583C0CC4-EA0D-4461-9421-1449E93A7E09.mobileprovision" /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/embedded.mobileprovision
+s335778174.361741
+e335778174.378808
+r1
+xProcessProductPackaging
+x/Users/ja/Library/MobileDevice/Provisioning Profiles/583C0CC4-EA0D-4461-9421-1449E93A7E09.mobileprovision
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/embedded.mobileprovision
+lSLF07#2@188"ProcessProductPackaging "/Users/ja/Library/MobileDevice/Provisioning Profiles/583C0CC4-EA0D-4461-9421-1449E93A7E09.mobileprovision" build/Debug-iphoneos/hybreb.app/embedded.mobileprovision335778174#335778174#0(0"0(0#0#115"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/embedded.mobileprovision8612055616#459"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/ja/Library/MobileDevice/Provisioning Profiles/583C0CC4-EA0D-4461-9421-1449E93A7E09.mobileprovision" -o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app/embedded.mobileprovision0#
+
+CProcessProductPackaging "/Users/ja/Library/MobileDevice/Provisioning Profiles/583C0CC4-EA0D-4461-9421-1449E93A7E09.mobileprovision" /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app/embedded.mobileprovision
+r0
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb.xcent
+s335778174.382553
+e335778174.491659
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb.xcent
+lSLF07#2@172"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb.xcent335778174#335778174#0(0"0(0#0#118"/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb.xcent8610769184#469"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist -entitlements -format xml -o /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb.xcent0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.3.sdk/Entitlements.plist /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/hybreb.build/Debug-iphoneos/hybreb.build/hybreb.xcent
+r0
+
+CTouch /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app
+s335790224.574913
+e335790224.579438
+r1
+xTouch
+x/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app
+lSLF07#2@96"Touch /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app335790224#335790224#0(0"0(0#0#0"8629828224#303"    cd /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/build/Debug-iphoneos/hybreb.app0#
+
+CTouch /Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/build/Debug-iphoneos/hybreb.app
+r0
+
