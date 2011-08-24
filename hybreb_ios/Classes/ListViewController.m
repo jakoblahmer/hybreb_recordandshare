@@ -39,13 +39,19 @@
 		// ... handle error
 	}
 	else {
+		
 		NSString* newStr = [NSString stringWithUTF8String:[data bytes]];
 		NSLog(@"Loaded data: %@", newStr);
 		
 		parser = [[SBJsonParser alloc] init];
 		
-		id object = [parser objectWithString:newStr];
-		NSLog(@"Loaded data: %@", object);
+		NSDictionary *jsonData = [parser objectWithString:newStr];
+		
+		
+		for (NSObject *obj in jsonData) {
+			NSLog(@"bla: %@ : %@", obj, [jsonData objectForKey:obj]);
+		}
+		
 		//if (object) {
 		//	[_formatted setStringValue:[_writer stringWithObject:object]];
 		//} else {
