@@ -30,12 +30,26 @@
 	
 	listOfItems = [[NSMutableArray alloc] init];
 	
+	// load data from url
+	NSURL* url = [NSURL URLWithString:@"http://localhost/hybreb_ios/test.php"];
+	NSError* error = nil;
+	NSData* data = [NSData dataWithContentsOfURL:url options:0 error:&error];
+	if (error) {
+		NSLog(@"Error %@, %@", error, [error userInfo]);
+		// ... handle error
+	}
+	else {
+		NSString* newStr = [NSString stringWithUTF8String:[data bytes]];
+		NSLog(@"Loaded data: %@", newStr);
+	}
+	
+	
 	[listOfItems addObject:@"test1"];
 	[listOfItems addObject:@"test2"];
 	[listOfItems addObject:@"test3"];
 	[listOfItems addObject:@"test4"];
 	
-	self.navigationItem.title = @"Videos";
+//	self.navigationItem.title = @"Videos";
 	
     [super viewDidLoad];
 }
