@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "SBJson.h"
 
 @interface ListViewController : UIViewController {
 	IBOutlet UITableView *videoTable;
 	NSMutableArray *listOfItems;
+	
+	SBJsonParser *parser;
 }
 
 @property (nonatomic, retain) IBOutlet UITableView *videoTable;

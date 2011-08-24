@@ -41,9 +41,18 @@
 	else {
 		NSString* newStr = [NSString stringWithUTF8String:[data bytes]];
 		NSLog(@"Loaded data: %@", newStr);
+		
+		parser = [[SBJsonParser alloc] init];
+		
+		id object = [parser objectWithString:newStr];
+		NSLog(@"Loaded data: %@", object);
+		//if (object) {
+		//	[_formatted setStringValue:[_writer stringWithObject:object]];
+		//} else {
+		//	[_formatted setStringValue:[NSString stringWithFormat:@"An error occurred: %@", _parser.error]];
+		//}		
 	}
-	
-	
+		
 	[listOfItems addObject:@"test1"];
 	[listOfItems addObject:@"test2"];
 	[listOfItems addObject:@"test3"];
@@ -103,6 +112,7 @@
 
 - (void)dealloc {
 	[listOfItems release];
+	[parser release];
     [super dealloc];
 }
 
