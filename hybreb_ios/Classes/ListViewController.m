@@ -45,12 +45,16 @@
 		
 		parser = [[SBJsonParser alloc] init];
 		
-		NSDictionary *jsonData = [parser objectWithString:newStr];
+		id *jsonData = [parser objectWithString:newStr];
 		
-		
-		for (NSObject *obj in jsonData) {
-			NSLog(@"bla: %@ : %@", obj, [jsonData objectForKey:obj]);
+		for (NSDictionary *dict in jsonData) {
+			NSLog(@"bla: %@ : %@ : %@", [dict objectForKey:@"name"], [dict objectForKey:@"author"], [dict objectForKey:@"length"]);
+			[listOfItems addObject: dict];
 		}
+		
+	//	for (NSObject *obj in jsonData) {
+	//		NSLog(@"bla: %@ : %@", obj, [jsonData objectForKey:obj]);
+	//	}
 		
 		//if (object) {
 		//	[_formatted setStringValue:[_writer stringWithObject:object]];
@@ -58,11 +62,12 @@
 		//	[_formatted setStringValue:[NSString stringWithFormat:@"An error occurred: %@", _parser.error]];
 		//}		
 	}
-		
-	[listOfItems addObject:@"test1"];
-	[listOfItems addObject:@"test2"];
-	[listOfItems addObject:@"test3"];
-	[listOfItems addObject:@"test4"];
+	
+	// TESTING
+//	[listOfItems addObject:@"test1"];
+//	[listOfItems addObject:@"test2"];
+//	[listOfItems addObject:@"test3"];
+//	[listOfItems addObject:@"test4"];
 	
 //	self.navigationItem.title = @"Videos";
 	
@@ -104,15 +109,17 @@
 	
 	static NSString *CellIdentifier = @"Cell";
 	
-	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+	UITableViewCell *cell = [self.videoTable dequeueReusableCellWithIdentifier:CellIdentifier];
 	if (cell == nil) {
-		cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+		cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
 	}
 	
 	// Set up the cell...
-	NSString *cellValue = [listOfItems objectAtIndex:indexPath.row];
-	cell.textLabel.text = cellValue;
+	NSDictionary *cellValue = [listOfItems objectAtIndex:indexPath.row];
+	cell.textLabel.text = [cellValue objectForKey:@"name"];
+	cell.detailTextLabel.text = [NSString stringWithFormat:@"von %@ - %@ sec", [cellValue objectForKey:@"author"], [cellValue objectForKey:@"length"]];
 	
+	[cellValue release];
 	return cell;
 }
 

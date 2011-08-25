@@ -1,5 +1,5 @@
 <?php
 
-echo '{ "name": "Black Lace", "sales": 110921, "totalRoyalties": 10223.82, "singles": [ "Superman", "Agadoo" ] }';
+echo '[{"name": "Video1", "author": "Author1", "length": 20}, {"name": "Video2", "author": "Author2", "length": 10}, {"name": "Video3", "author": "Author3", "length": 15}]';
 
 ?>
