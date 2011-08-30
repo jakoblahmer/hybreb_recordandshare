@@ -35,14 +35,12 @@ class Hybreb_HarteNacht	{
 	 * adds the rewrite rules, to access the plugin directly
 	 */
 	public static function doRewriteRules() {
-		//global $wp_rewrite;
+		add_rewrite_rule('list-videos/(.*)/?$', 'wp-content/plugins/hybreb_hartenacht/fetchVideos.php?videos=$1', 'top');
+		flush_rewrite_rules(true);
+	}
 
-		//add_rewrite_rule('login/?$', 'wp-login.php', 'top');
-		add_rewrite_rule('list-videos/?$', 'wp-content/plugins/hybreb_hartenacht/fetchVideos.php', 'top');
-		//$wp_rewrite->flush_rules(true);
-		flush_rewrite_rules();
-		//wp_register_style('a1socialmediacss', plugin_dir_url( __FILE__ ) . 'css/a1socialmedia.css');
-		//wp_enqueue_style('a1socialmediacss');
+	public static function removeRewriteRules() {
+		flush_rewrite_rules(true);
 	}
 	
 	/**
@@ -50,7 +48,7 @@ class Hybreb_HarteNacht	{
 	 */
 	private static function addFilters() {
 		// add input fields
-		//add_filter('user_contactmethods', array('A1_Author_SocialMedia', 'addSocialMediaContact'));
+		// add_filter('query_vars', array('videos'));
 	}
 
 	private static function addActions() {
@@ -60,7 +58,9 @@ class Hybreb_HarteNacht	{
 		
 		//add_action('admin_print_styles', array('A1_Author_SocialMedia', 'my_admin_styles'));
 		//add_action('a1_socialmedia_print', array('A1_Author_SocialMedia', 'print_socialMedia'));
-		add_action('init', array('Hybreb_HarteNacht', 'doRewriteRules'));
+		
+		register_activation_hook(__FILE__, array('Hybreb_HarteNacht', 'doRewriteRules'));
+		register_deactivation_hook(__FILE__, array('Hybreb_HarteNacht', 'removeRewriteRules'));
 	}
 }
 
@@ -69,6 +69,5 @@ class Hybreb_HarteNacht	{
 if(!Hybreb_HarteNacht::init())	{
 	echo 'Plugin Hybreb_HarteNacht was not initialized correctly!';
 }
-
 
 ?>
