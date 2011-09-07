@@ -9,13 +9,22 @@
 #import <UIKit/UIKit.h>
 #import "SBJson.h"
 
-@interface ListViewController : UIViewController {
+@interface ListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate> {
+    // the table view itself
 	IBOutlet UITableView *videoTable;
+    
+    // list items read from json
 	NSMutableArray *listOfItems;
-	
+    
+    // only on loading thread at once
+	BOOL loading;
+    
+    NSURLConnection *theConnection;
 	SBJsonParser *parser;
 }
 
 @property (nonatomic, retain) IBOutlet UITableView *videoTable;
+
+-(void) loadData;
 
 @end

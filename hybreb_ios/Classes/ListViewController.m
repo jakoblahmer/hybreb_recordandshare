@@ -6,6 +6,7 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
+#import <MediaPlayer/MediaPlayer.h>
 #import "ListViewController.h"
 
 
@@ -27,53 +28,30 @@
 
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
-	
-	listOfItems = [[NSMutableArray alloc] init];
-	
-	// load data from url
-	NSURL* url = [NSURL URLWithString:@"http://localhost/hybreb_ios/test.php"];
-	NSError* error = nil;
-	NSData* data = [NSData dataWithContentsOfURL:url options:0 error:&error];
-	if (error) {
-		NSLog(@"Error %@, %@", error, [error userInfo]);
-		// ... handle error
-	}
-	else {
-		
-		NSString* newStr = [NSString stringWithUTF8String:[data bytes]];
-		NSLog(@"Loaded data: %@", newStr);
-		
-		parser = [[SBJsonParser alloc] init];
-		
-		id *jsonData = [parser objectWithString:newStr];
-		
-		for (NSDictionary *dict in jsonData) {
-			NSLog(@"bla: %@ : %@ : %@", [dict objectForKey:@"name"], [dict objectForKey:@"author"], [dict objectForKey:@"length"]);
-			[listOfItems addObject: dict];
-		}
-		
-	//	for (NSObject *obj in jsonData) {
-	//		NSLog(@"bla: %@ : %@", obj, [jsonData objectForKey:obj]);
-	//	}
-		
-		//if (object) {
-		//	[_formatted setStringValue:[_writer stringWithObject:object]];
-		//} else {
-		//	[_formatted setStringValue:[NSString stringWithFormat:@"An error occurred: %@", _parser.error]];
-		//}		
-	}
-	
-	// TESTING
-//	[listOfItems addObject:@"test1"];
-//	[listOfItems addObject:@"test2"];
-//	[listOfItems addObject:@"test3"];
-//	[listOfItems addObject:@"test4"];
-	
-//	self.navigationItem.title = @"Videos";
-	
+
+    loading = NO;
+    
+    listOfItems = [[NSMutableArray alloc] init];
+    videoTable.delegate = self;
+    
+    // [self loadData];
     [super viewDidLoad];
 }
 
+- (void) loadData {
+    if (loading) return;
+	// reset items
+    //listOfItems = [[NSMutableArray alloc] init];
+    
+    
+	// load data from url
+	NSString* url = @"http://www.abendstille.at/hybreb_ios/list-videos/10";
+    NSURLRequest *theRequest=[NSURLRequest requestWithURL:[NSURL URLWithString:url]
+											  cachePolicy:NSURLRequestUseProtocolCachePolicy
+										  timeoutInterval:60.0];
+    theConnection = [[NSURLConnection alloc] initWithRequest:theRequest delegate:self];
+    loading = YES;
+}
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -97,6 +75,57 @@
 }
 
 
+- (void)dealloc {
+    NSLog(@"deallocating list");
+	[listOfItems release];
+	[parser release];
+    [videoTable release];
+    [super dealloc];
+}
+
+#pragma mark NSURLConnectionDelegate methods
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+	NSLog(@"Connection didReceiveResponse: %@ - %@", response, [response MIMEType]);
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
+	NSLog(@"Connection didReceiveAuthenticationChallenge - should not happen: %@", challenge);
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+	NSLog(@"Connection didReceiveData of length: %u", data.length);
+    
+	// Parse the new chunk of data. The parser will append it to
+	// its internal buffer, then parse from where it left off in
+	// the last chunk.
+    NSString* newStr = [NSString stringWithUTF8String:[data bytes]];
+    NSLog(@"Loaded data: %@", newStr);
+    
+    parser = [[SBJsonParser alloc] init];
+    
+    NSArray *jsonData = [parser objectWithString:newStr];
+    
+    for (NSDictionary *dict in jsonData) {
+        NSLog(@"bla: %@ : %@ : %@ : %@", [dict objectForKey:@"name"], [dict objectForKey:@"author"], [dict objectForKey:@"length"], [dict objectForKey:@"url"]);
+        [listOfItems addObject: dict];
+    }
+    
+    [videoTable reloadData];
+    loading = NO;
+}
+
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+    NSLog(@"Connection failed! Error - %@ %@",
+          [error localizedDescription],
+          [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+}
+
+#pragma mark Table View Data Source Methods
+
 
 // return number of elements in table
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -116,18 +145,36 @@
 	
 	// Set up the cell...
 	NSDictionary *cellValue = [listOfItems objectAtIndex:indexPath.row];
-	cell.textLabel.text = [cellValue objectForKey:@"name"];
+    cell.textLabel.text = [cellValue objectForKey:@"name"];
 	cell.detailTextLabel.text = [NSString stringWithFormat:@"von %@ - %@ sec", [cellValue objectForKey:@"author"], [cellValue objectForKey:@"length"]];
 	
-	[cellValue release];
 	return cell;
 }
 
-- (void)dealloc {
-	[listOfItems release];
-	[parser release];
-    [super dealloc];
-}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    NSLog(@"Item selected - %d", indexPath.row);
+    NSLog(@"we have items: %@", [listOfItems count]); // does not work. bad access :(
+    
+    NSDictionary *myCell = [listOfItems objectAtIndex:indexPath.row];
+    //NSLog(@"Showing video at %@", [cellValue objectForKey:@"name"]);
+    if (myCell != NULL) {
+        //NSEnumerator *mynum = [myCell keyEnumerator];
+        //NSString *thisObject;
+        //while (thisObject = [mynum nextObject])
+        //{
+        //    NSLog(@"thisObject: %@", thisObject);
+        //}
 
+        NSURL *videoURL = [NSURL URLWithString:[myCell objectForKey:@"name"]];
+    
+        MPMoviePlayerController *moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
+        [moviePlayer prepareToPlay];
+        [moviePlayer play];
+    
+    } else {
+        NSLog(@"no cell value accessible :/");
+    }
+    //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:[cellValue objectForKey:@"url"]]];
+}
 
 @end

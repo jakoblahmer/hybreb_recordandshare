@@ -7,6 +7,7 @@
 //
 
 #import "RecordViewController.h"
+#import "ProgressViewController.h"
 
 
 @implementation RecordViewController
@@ -22,12 +23,11 @@
 }
 */
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
-*/
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -91,7 +91,10 @@
 	
 	cameraUI.delegate = delegate;
 	
-	// show camera ui
+    // capture only 20 seconds
+	[cameraUI setVideoMaximumDuration:20];
+    
+    // show camera ui
 	[controller presentModalViewController: cameraUI animated: YES];
 	
     return YES;
@@ -118,9 +121,6 @@
 	
 	NSString *mediaType = [info objectForKey: UIImagePickerControllerMediaType];
 	
-	UIImage *originalImage, *editedImage, *imageToSave;
-	
-	
 	// Handle a movie capture
 	if (CFStringCompare ((CFStringRef) mediaType, kUTTypeMovie, 0) == kCFCompareEqualTo) {
 		
@@ -130,18 +130,25 @@
 		if (UIVideoAtPathIsCompatibleWithSavedPhotosAlbum (moviePath)) {
 			
 			UISaveVideoAtPathToSavedPhotosAlbum (moviePath, nil, nil, nil);
-		}
+
+            ProgressViewController *pvc = [[ProgressViewController alloc] initWithNibName:@"ProgressView" bundle:[NSBundle mainBundle]];
+            pvc.filePath = moviePath;
+            //[self.navigationController pushViewController:pvc animated:YES];
+            
+            [[picker parentViewController] dismissModalViewControllerAnimated: NO];
+            
+            [self presentModalViewController: pvc animated: NO];
+        } else {
+            [[picker parentViewController] dismissModalViewControllerAnimated: YES];
+        }
 		
-		// @TODO
-		// upload to page
-	}
+	} else {
+        [[picker parentViewController] dismissModalViewControllerAnimated: YES];
+    }
 	
 	// hide camera ui
-	[[picker parentViewController] dismissModalViewControllerAnimated: YES];
 	[picker release];
 }
-
-
 
 - (void)dealloc {
     [super dealloc];

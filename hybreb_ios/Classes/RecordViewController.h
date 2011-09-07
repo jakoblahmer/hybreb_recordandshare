@@ -9,13 +9,10 @@
 #import <UIKit/UIKit.h>
 #import <MobileCoreServices/UTCoreTypes.h>
 
-
-@interface RecordViewController : UIViewController<UIImagePickerControllerDelegate> {
-
+@interface RecordViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
 }
 
 - (IBAction)recordButtonPressed:(id)sender;
 - (BOOL) startCameraControllerFromViewController: (UIViewController*) controller usingDelegate: (id <UIImagePickerControllerDelegate, UINavigationControllerDelegate>) delegate;
-
 
 @end

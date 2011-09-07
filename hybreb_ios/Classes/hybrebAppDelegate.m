@@ -7,7 +7,7 @@
 //
 
 #import "hybrebAppDelegate.h"
-
+#import "ListViewController.h"
 
 @implementation hybrebAppDelegate
 
@@ -23,6 +23,7 @@
     // Override point for customization after application launch.
 
 	// Set the tab bar controller as the window's root view controller and display.
+    tabBarController.delegate = self;
     self.window.rootViewController = self.tabBarController;
     [self.window makeKeyAndVisible];
 
@@ -71,11 +72,15 @@
 #pragma mark -
 #pragma mark UITabBarControllerDelegate methods
 
-/*
 // Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController {
+- (void)tabBarController:(UITabBarController *)tabBarController2 didSelectViewController:(UIViewController *)viewController {
+    if (tabBarController2.selectedIndex == 1) {
+        NSLog(@"Show tab selected. loading view...");
+        ListViewController* listView = (ListViewController *)viewController;
+        
+        [listView loadData];
+    }
 }
-*/
 
 /*
 // Optional UITabBarControllerDelegate method.
