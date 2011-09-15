@@ -13,6 +13,7 @@
 @implementation ListViewController
 
 @synthesize videoTable;
+@synthesize movieController;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -31,7 +32,7 @@
 
     loading = NO;
     
-    listOfItems = [[NSMutableArray alloc] init];
+    //[listOfItems retain];
     videoTable.delegate = self;
     
     // [self loadData];
@@ -41,7 +42,7 @@
 - (void) loadData {
     if (loading) return;
 	// reset items
-    //listOfItems = [[NSMutableArray alloc] init];
+    listOfItems = [[NSMutableArray alloc] init];
     
     
 	// load data from url
@@ -100,6 +101,7 @@
 	// its internal buffer, then parse from where it left off in
 	// the last chunk.
     NSString* newStr = [NSString stringWithUTF8String:[data bytes]];
+    // TODO: insert check, if newStr == null, if so, try to load again
     NSLog(@"Loaded data: %@", newStr);
     
     parser = [[SBJsonParser alloc] init];
@@ -107,7 +109,7 @@
     NSArray *jsonData = [parser objectWithString:newStr];
     
     for (NSDictionary *dict in jsonData) {
-        NSLog(@"bla: %@ : %@ : %@ : %@", [dict objectForKey:@"name"], [dict objectForKey:@"author"], [dict objectForKey:@"length"], [dict objectForKey:@"url"]);
+        //NSLog(@"bla: %@ : %@ : %@ : %@", [dict objectForKey:@"name"], [dict objectForKey:@"author"], [dict objectForKey:@"length"], [dict objectForKey:@"url"]);
         [listOfItems addObject: dict];
     }
     
@@ -153,7 +155,7 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NSLog(@"Item selected - %d", indexPath.row);
-    NSLog(@"we have items: %@", [listOfItems count]); // does not work. bad access :(
+    NSLog(@"we have items: %d", [listOfItems count]); // does not work. bad access :(
     
     NSDictionary *myCell = [listOfItems objectAtIndex:indexPath.row];
     //NSLog(@"Showing video at %@", [cellValue objectForKey:@"name"]);
@@ -165,16 +167,65 @@
         //    NSLog(@"thisObject: %@", thisObject);
         //}
 
-        NSURL *videoURL = [NSURL URLWithString:[myCell objectForKey:@"name"]];
-    
-        MPMoviePlayerController *moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:videoURL];
-        [moviePlayer prepareToPlay];
-        [moviePlayer play];
-    
+        NSLog(@"loading vide from %@", [myCell objectForKey:@"url"]);
+        
+        [self showMovie:[myCell objectForKey:@"url"]];
     } else {
         NSLog(@"no cell value accessible :/");
     }
     //[[UIApplication sharedApplication] openURL:[NSURL URLWithString:[cellValue objectForKey:@"url"]]];
+}
+
+- (void)willEnterFullscreen:(NSNotification*)notification {
+    NSLog(@"willEnterFullscreen");
+}
+
+- (void)enteredFullscreen:(NSNotification*)notification {
+    NSLog(@"enteredFullscreen");
+}
+
+- (void)willExitFullscreen:(NSNotification*)notification {
+    NSLog(@"willExitFullscreen");
+}
+
+- (void)exitedFullscreen:(NSNotification*)notification {
+    NSLog(@"exitedFullscreen");
+    [self.movieController.view removeFromSuperview];
+    self.movieController = nil;
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+}
+
+- (void)playbackFinished:(NSNotification*)notification {
+    NSNumber* reason = [[notification userInfo] objectForKey:MPMoviePlayerPlaybackDidFinishReasonUserInfoKey];
+    switch ([reason intValue]) {
+        case MPMovieFinishReasonPlaybackEnded:
+            NSLog(@"playbackFinished. Reason: Playback Ended");         
+            break;
+        case MPMovieFinishReasonPlaybackError:
+            NSLog(@"playbackFinished. Reason: Playback Error");
+            break;
+        case MPMovieFinishReasonUserExited:
+            NSLog(@"playbackFinished. Reason: User Exited");
+            break;
+        default:
+            break;
+    }
+    [self.movieController setFullscreen:NO animated:YES];
+}
+
+- (void)showMovie:(NSString*)movie {
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(willEnterFullscreen:) name:MPMoviePlayerWillEnterFullscreenNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(willExitFullscreen:) name:MPMoviePlayerWillExitFullscreenNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enteredFullscreen:) name:MPMoviePlayerDidEnterFullscreenNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(exitedFullscreen:) name:MPMoviePlayerDidExitFullscreenNotification object:nil];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(playbackFinished:) name:MPMoviePlayerPlaybackDidFinishNotification object:nil];
+    
+    NSURL* movieURL =  [NSURL URLWithString:movie];
+    self.movieController = [[MPMoviePlayerController alloc] initWithContentURL:movieURL];
+    self.movieController.view.frame = self.view.frame;
+    [self.view addSubview:movieController.view];
+    [self.movieController setFullscreen:YES animated:YES];
+    [self.movieController play];
 }
 
 @end

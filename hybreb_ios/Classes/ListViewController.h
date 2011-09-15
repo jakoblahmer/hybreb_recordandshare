@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "SBJson.h"
+#import <MediaPlayer/MediaPlayer.h>
 
 @interface ListViewController : UIViewController<UITableViewDataSource, UITableViewDelegate> {
     // the table view itself
@@ -16,15 +17,21 @@
     // list items read from json
 	NSMutableArray *listOfItems;
     
-    // only on loading thread at once
-	BOOL loading;
+    // movieController
+    MPMoviePlayerController *movieController;
     
+    // connection and parser for json loading the list
     NSURLConnection *theConnection;
 	SBJsonParser *parser;
+    
+    // only on loading thread at once
+	BOOL loading;
 }
 
 @property (nonatomic, retain) IBOutlet UITableView *videoTable;
+@property (nonatomic, retain) MPMoviePlayerController *movieController;
 
--(void) loadData;
+- (void) loadData;
+- (void)showMovie:(NSString*)movieURL;
 
 @end

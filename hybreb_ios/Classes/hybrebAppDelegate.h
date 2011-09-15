@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FBConnect.h"
+
 
 @interface hybrebAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
     UIWindow *window;

@@ -8,9 +8,11 @@
 
 #import "RecordViewController.h"
 #import "ProgressViewController.h"
-
+#import "Facebook.h"
 
 @implementation RecordViewController
+
+@synthesize facebook;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -26,6 +28,24 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    facebook = [[Facebook alloc] initWithAppId:@"123576421074972" andDelegate:self];
+    NSArray *perms = [NSArray arrayWithObjects: @"user_about_me", nil];
+    
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([defaults objectForKey:@"FBAccessTokenKey"] 
+        && [defaults objectForKey:@"FBExpirationDateKey"]) {
+        facebook.accessToken = [defaults objectForKey:@"FBAccessTokenKey"];
+        facebook.expirationDate = [defaults objectForKey:@"FBExpirationDateKey"];
+    }
+    
+    if ([facebook isSessionValid]) {
+        [facebook requestWithGraphPath:@"me" andDelegate:self];
+    } else {
+        [facebook authorize:perms];
+    }
+    
+    [perms release];
 }
 
 
@@ -154,5 +174,14 @@
     [super dealloc];
 }
 
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    
+    return [facebook handleOpenURL:url]; 
+}
+
+- (void)request:(FBRequest *)request didLoad:(id)result {
+    NSLog(@"you are logged in as %@", [result objectForKey:@"name"]);
+}
 
 @end

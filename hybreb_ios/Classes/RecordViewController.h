@@ -8,9 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import <MobileCoreServices/UTCoreTypes.h>
+#import "FBConnect.h"
 
-@interface RecordViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
+@interface RecordViewController : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate, FBSessionDelegate, FBRequestDelegate> {
+
+    Facebook *facebook;
 }
+
+@property (nonatomic, retain) Facebook *facebook;
 
 - (IBAction)recordButtonPressed:(id)sender;
 - (BOOL) startCameraControllerFromViewController: (UIViewController*) controller usingDelegate: (id <UIImagePickerControllerDelegate, UINavigationControllerDelegate>) delegate;
