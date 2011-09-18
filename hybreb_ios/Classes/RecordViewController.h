@@ -31,5 +31,7 @@
 + (void)setFb_name:(NSString*)newFb_name;
 + (NSString*)fb_id;
 + (void)setFb_id:(NSString*)newFb_id;
++ (NSString*)fb_email;
++ (void)setFb_email:(NSString*)newFb_email;
 
 @end

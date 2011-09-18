@@ -24,11 +24,12 @@
 }
 
 
-- (id)initWithNibNameAndParams:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil facebook_name:(NSString *)fbb_name facebook_id:(NSString *)fbb_id
+- (id)initWithNibNameAndParams:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil facebook_name:(NSString *)fbb_name facebook_id:(NSString *)fbb_id facebook_email:(NSString *)fbb_email
 {
 	
 	fb_id = fbb_id;
 	fb_name = fbb_name;
+	fb_email = fbb_email;
 
     return [self initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
 }
@@ -60,6 +61,7 @@
     [request setDelegate:self];
 	[request setPostValue:fb_name forKey:@"fb_name"];
 	[request setPostValue:fb_id forKey:@"fb_id"];
+	[request setPostValue:fb_email forKey:@"fb_email"];
     [request setUploadProgressDelegate:progressView];
     [request startAsynchronous];
     [super viewDidLoad];
