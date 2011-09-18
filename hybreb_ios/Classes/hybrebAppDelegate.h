@@ -7,12 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FBConnect.h"
-
+#import "RecordViewController.h"
 
 @interface hybrebAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
     UIWindow *window;
     UITabBarController *tabBarController;
+	
+	RecordViewController *controller;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

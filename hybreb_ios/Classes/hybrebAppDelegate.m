@@ -8,6 +8,7 @@
 
 #import "hybrebAppDelegate.h"
 #import "ListViewController.h"
+#import "RecordViewController.h"
 
 @implementation hybrebAppDelegate
 
@@ -28,6 +29,15 @@
     [self.window makeKeyAndVisible];
 
     return YES;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+	NSLog(@"i am called");
+	
+	// call handleOpenURL in RecordViewController (first view controller in tabbarcontroller)
+	controller = (RecordViewController *)[self.tabBarController.viewControllers objectAtIndex:0];
+
+	return [[controller facebook] handleOpenURL:url];
 }
 
 

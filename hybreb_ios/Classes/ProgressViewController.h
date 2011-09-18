@@ -12,7 +12,11 @@
 @interface ProgressViewController : UIViewController {
     IBOutlet UIProgressView *progressView;
     NSString *filePath;
+	NSString *fb_name;
+	NSString *fb_id;
 }
 @property (nonatomic, retain) NSString *filePath;
+
+- (id)initWithNibNameAndParams:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil facebook_name:(NSString *)fbb_name facebook_id:(NSString *)fbb_id;
 
 @end

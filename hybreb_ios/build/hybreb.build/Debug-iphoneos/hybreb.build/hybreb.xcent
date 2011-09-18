@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>983Q7HF34W.com.yourcompany.hybreb</string>
+	<string>983Q7HF34W.com.hybreb.hybreb</string>
 	<key>com.apple.developer.ubiquity-container-identifiers</key>
 	<array>
 		<string>PU7GW3929S.*</string>
@@ -14,7 +14,7 @@
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>983Q7HF34W.com.yourcompany.hybreb</string>
+		<string>983Q7HF34W.com.hybreb.hybreb</string>
 	</array>
 </dict>
 </plist>

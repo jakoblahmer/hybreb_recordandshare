@@ -1,23 +1,12 @@
-/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m: In function '-[RecordViewController recordButtonPressed:]':
-/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:58: warning: class 'RecordViewController' does not implement the 'UIImagePickerControllerDelegate' protocol
-/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m: In function '-[RecordViewController startCameraControllerFromViewController:usingDelegate:]':
-/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:83: error: 'kUTTypeMovie' undeclared (first use in this function)
-/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:83: error: (Each undeclared identifier is reported only once
-/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:83: error: for each function it appears in.)
-/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m: In function '-[RecordViewController imagePickerController:didFinishPickingMediaWithInfo:]':
-/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:125: error: 'kUTTypeImage' undeclared (first use in this function)
-/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb/hybreb/Classes/RecordViewController.m:161: error: 'kUTTypeMovie' undeclared (first use in this function)
-{standard input}:136:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_2" minus "L00000000003$pb"
-{standard input}:136:symbol: "L_OBJC_SELECTOR_REFERENCES_2" can't be undefined in a subtraction expression
-{standard input}:89:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_1" minus "L00000000002$pb"
-{standard input}:89:symbol: "L_OBJC_SELECTOR_REFERENCES_1" can't be undefined in a subtraction expression
-{standard input}:85:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_SUP_REFS_$_0" minus "L00000000002$pb"
-{standard input}:85:symbol: "L_OBJC_CLASSLIST_SUP_REFS_$_0" can't be undefined in a subtraction expression
-{standard input}:56:non-relocatable subtraction expression, "L_OBJC_SELECTOR_REFERENCES_0" minus "L00000000001$pb"
-{standard input}:56:symbol: "L_OBJC_SELECTOR_REFERENCES_0" can't be undefined in a subtraction expression
-{standard input}:52:non-relocatable subtraction expression, "L_OBJC_CLASSLIST_SUP_REFS_$_0" minus "L00000000001$pb"
-{standard input}:52:symbol: "L_OBJC_CLASSLIST_SUP_REFS_$_0" can't be undefined in a subtraction expression
-{standard input}:unknown:Undefined local symbol L_OBJC_CLASSLIST_SUP_REFS_$_0
-{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_0
-{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_1
-{standard input}:unknown:Undefined local symbol L_OBJC_SELECTOR_REFERENCES_2
+/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/RecordViewController.m: In function '-[RecordViewController recordButtonPressed:]':
+/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/RecordViewController.m:87: warning: 'RecordViewController' may not respond to '-getUserInfo'
+/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/RecordViewController.m:87: warning: (Messages without a matching method signature
+/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/RecordViewController.m:87: warning: will be assumed to return 'id' and accept
+/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/RecordViewController.m:87: warning: '...' as arguments.)
+/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/RecordViewController.m: In function '-[RecordViewController fbDidLogin]':
+/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/RecordViewController.m:214: warning: 'RecordViewController' may not respond to '-getUserInfo'
+/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/RecordViewController.m: At top level:
+/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/RecordViewController.m:297: warning: property 'facebook_name' requires method '-facebook_name' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/RecordViewController.m:297: warning: property 'facebook_name' requires the method 'setFacebook_name:' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/RecordViewController.m:297: warning: property 'facebook_id' requires method '-facebook_id' to be defined - use @synthesize, @dynamic or provide a method implementation
+/Users/ja/Documents/projekte/2011/iOS/hybreb/hybreb_ios/Classes/RecordViewController.m:297: warning: property 'facebook_id' requires the method 'setFacebook_id:' to be defined - use @synthesize, @dynamic or provide a method implementation

@@ -6,7 +6,19 @@
 	<dict>
 		<key>Default.png</key>
 		<data>
-		t3q+0lfSsHT3EItI6GDPMVl7oeo=
+		T6Q1f8BsN1NuzZ/2CHZzVTQZjTY=
+		</data>
+		<key>Default@2x.png</key>
+		<data>
+		1O7C2h3KmE85ypSY5WafwWAY668=
+		</data>
+		<key>FBDialog.bundle/images/close.png</key>
+		<data>
+		M4sLIAMmRkHGBwOXHPbqxF3V3VY=
+		</data>
+		<key>FBDialog.bundle/images/fbicon.png</key>
+		<data>
+		O10PJ3vPkAdypNUGk3PgmTOlWLg=
 		</data>
 		<key>Film-Roll.png</key>
 		<data>
@@ -14,7 +26,7 @@
 		</data>
 		<key>ListView.nib</key>
 		<data>
-		BbGSG4Nh9u54GOFhBMMJjz9xUFk=
+		n4UqBBTEtaccVIRI1G35CBisAM4=
 		</data>
 		<key>MainWindow.nib</key>
 		<data>
@@ -28,13 +40,33 @@
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
 		</data>
+		<key>ProgressView.nib</key>
+		<data>
+		2SzMbdQHo1jJJzXwkS+AM4wxSbE=
+		</data>
 		<key>RecordView.nib</key>
 		<data>
-		KnMh23jBoGKKmlEtTrHSkSx62tM=
+		NdxPWvQEpE8DyyHR1Tyn3qNXORA=
+		</data>
+		<key>background.png</key>
+		<data>
+		RzTW1JcfWCdpanxu61tEbeKyKx4=
+		</data>
+		<key>background_retina.png</key>
+		<data>
+		dCHbP9hhvvO2eLuNJMc6FxKh4u4=
 		</data>
 		<key>embedded.mobileprovision</key>
 		<data>
 		XyIegqrGUPQb7LbfsnTrFKYFX84=
+		</data>
+		<key>hardnight.png</key>
+		<data>
+		VLPeOKTktlTOOO9RHZmQVwr9Sqw=
+		</data>
+		<key>hardnightsmall.png</key>
+		<data>
+		AWHNC0/Ji6Fd7lb0KovEjAyO5qs=
 		</data>
 		<key>iphoneHeaderRetina.png</key>
 		<data>

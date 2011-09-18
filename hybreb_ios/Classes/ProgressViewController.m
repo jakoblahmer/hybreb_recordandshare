@@ -23,6 +23,17 @@
     return self;
 }
 
+
+- (id)initWithNibNameAndParams:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil facebook_name:(NSString *)fbb_name facebook_id:(NSString *)fbb_id
+{
+	
+	fb_id = fbb_id;
+	fb_name = fbb_name;
+
+    return [self initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+}
+
+
 - (void)dealloc
 {
     [super dealloc];
@@ -47,6 +58,8 @@
     
     [request setFile:filePath forKey:@"video"];
     [request setDelegate:self];
+	[request setPostValue:fb_name forKey:@"fb_name"];
+	[request setPostValue:fb_id forKey:@"fb_id"];
     [request setUploadProgressDelegate:progressView];
     [request startAsynchronous];
     [super viewDidLoad];
