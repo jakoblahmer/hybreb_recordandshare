@@ -571,7 +571,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Karl Lahmer (4EAVB6M94L)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matthias Steinböck (AFU4ESR6E8)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -583,7 +583,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = hartenacht.at;
-				PROVISIONING_PROFILE = "583C0CC4-EA0D-4461-9421-1449E93A7E09";
+				PROVISIONING_PROFILE = "613670C6-63D1-4718-A7FB-15E1BC3415E0";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 			};
 			name = Debug;
@@ -592,7 +592,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Karl Lahmer (4EAVB6M94L)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Matthias Steinböck (AFU4ESR6E8)";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = hartenacht.at_Prefix.pch;
@@ -601,7 +601,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = hartenacht.at;
-				PROVISIONING_PROFILE = "583C0CC4-EA0D-4461-9421-1449E93A7E09";
+				PROVISIONING_PROFILE = "613670C6-63D1-4718-A7FB-15E1BC3415E0";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

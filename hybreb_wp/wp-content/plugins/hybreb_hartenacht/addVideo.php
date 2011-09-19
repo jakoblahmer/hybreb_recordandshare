@@ -9,6 +9,13 @@ require_once( ABSPATH . 'wp-admin/includes/admin.php' );
 ob_end_clean();
 
 
+echo '<pre>'; print_r($_POST); echo '</pre>';
+
+// $_POST contains:
+// 	$_POST['fb_id']
+// 	$_POST['fb_name']
+// 	$_POST['fb_email']
+
 // TODO: get userId from FaceBook-id
 $userId = 1;
 
@@ -58,8 +65,8 @@ if (isset($_FILES['video'])) {
 			// Set up options array to add this file as an attachment
 			$attachment = array(
 				'post_mime_type' => $uploaded_file_type,
-				'post_title' => 'Uploaded video ' . addslashes($file_title_for_media_library),
-				'post_content' => '',
+				'post_title' => 'Video post '.date('d.m.Y G:i'), //'Uploaded video ' . addslashes($file_title_for_media_library),
+				'post_content' => '<video src="'.$uploaded_file['url'].'" controls />',
 				'post_status' => 'inherit'
 			);
 
