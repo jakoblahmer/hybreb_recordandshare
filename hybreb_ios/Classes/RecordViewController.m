@@ -8,6 +8,7 @@
 
 #import "RecordViewController.h"
 #import "ProgressViewController.h"
+
 //#import "Facebook.h"
 
 @implementation RecordViewController
@@ -75,16 +76,8 @@ static NSString* fb_email;
         facebook.expirationDate = [defaults objectForKey:@"FBExpirationDateKey"];
     }
     
-	/*
-	 if ([facebook isSessionValid]) {
-	 [facebook requestWithGraphPath:@"me" andDelegate:self];
-	 } else {
-	 [facebook authorize:perms];
-	 }
-	 */
-	if (![facebook isSessionValid]) {
-		NSLog(@"session is not valid");
-		[facebook authorize:permissions];
+    if (![facebook isSessionValid]) {
+        [facebook authorize:permissions];
 	} else {
 //		[facebook authorize:permissions];
 		[self getUserInfo];
@@ -205,7 +198,7 @@ static NSString* fb_email;
  */
 - (void)fbDidLogin {
 	NSLog(@"did log in");
-	NSLog(@"token %s", [facebook accessToken]);
+	NSLog(@"token %@", [facebook accessToken]);
 	NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
 	[defaults setObject:[facebook accessToken] forKey:@"FBAccessTokenKey"];
 	[defaults setObject:[facebook expirationDate] forKey:@"FBExpirationDateKey"];

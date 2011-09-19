@@ -26,6 +26,7 @@
 
 - (IBAction)recordButtonPressed:(id)sender;
 - (BOOL) startCameraControllerFromViewController: (UIViewController*) controller usingDelegate: (id <UIImagePickerControllerDelegate, UINavigationControllerDelegate>) delegate;
+- (void)getUserInfo;
 
 + (NSString*)fb_name;
 + (void)setFb_name:(NSString*)newFb_name;

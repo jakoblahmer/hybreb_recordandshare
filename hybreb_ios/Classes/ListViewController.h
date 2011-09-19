@@ -32,6 +32,7 @@
 @property (nonatomic, retain) MPMoviePlayerController *movieController;
 
 - (void) loadData;
-- (void)showMovie:(NSString*)movieURL;
+- (void) showMovie:(NSString*)movieURL;
+- (NSString *) stringWithUrl:(NSURL *)url;
 
 @end

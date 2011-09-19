@@ -9,6 +9,7 @@
 #import "hybrebAppDelegate.h"
 #import "ListViewController.h"
 #import "RecordViewController.h"
+#import "Reachability.h"
 
 @implementation hybrebAppDelegate
 
@@ -23,6 +24,18 @@
     
     // Override point for customization after application launch.
 
+    Reachability *r = [Reachability reachabilityWithHostName:@"www.abendstille.at"];
+    
+    NetworkStatus internetStatus = [r currentReachabilityStatus];
+    
+    if ((internetStatus != ReachableViaWiFi) && (internetStatus != ReachableViaWWAN))
+    {
+        NSLog(@"no internet availiable");
+        UIAlertView *myAlert = [[UIAlertView alloc] initWithTitle:@"No Internet Connection" message:@"You require an internet connection via WiFi or cellular network." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles:nil];
+        [myAlert show];
+        [myAlert release];
+    }
+    
 	// Set the tab bar controller as the window's root view controller and display.
     tabBarController.delegate = self;
     self.window.rootViewController = self.tabBarController;

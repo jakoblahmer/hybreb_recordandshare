@@ -46,12 +46,29 @@
     
     
 	// load data from url
-	NSString* url = @"http://www.abendstille.at/hybreb_ios/list-videos/10";
-    NSURLRequest *theRequest=[NSURLRequest requestWithURL:[NSURL URLWithString:url]
-											  cachePolicy:NSURLRequestUseProtocolCachePolicy
-										  timeoutInterval:60.0];
-    theConnection = [[NSURLConnection alloc] initWithRequest:theRequest delegate:self];
     loading = YES;
+    
+    NSURL* url = [NSURL URLWithString:@"http://www.abendstille.at/hybreb_ios/list-videos/10"];
+    NSString *jsonString = [self stringWithUrl:url];
+
+	// Parse the new chunk of data. The parser will append it to
+	// its internal buffer, then parse from where it left off in
+	// the last chunk.
+    // NSString* newStr = [NSString stringWithUTF8String:jsonString];
+    // TODO: insert check, if newStr == null, if so, try to load again
+    NSLog(@"Loaded data: %@", jsonString);
+    
+    parser = [[SBJsonParser alloc] init];
+    
+    NSArray *jsonData = [parser objectWithString:jsonString];
+    
+    for (NSDictionary *dict in jsonData) {
+        //NSLog(@"bla: %@ : %@ : %@ : %@", [dict objectForKey:@"name"], [dict objectForKey:@"author"], [dict objectForKey:@"length"], [dict objectForKey:@"url"]);
+        [listOfItems addObject: dict];
+    }
+    
+    [videoTable reloadData];
+    loading = NO;
 }
 
 /*
@@ -84,46 +101,25 @@
     [super dealloc];
 }
 
-#pragma mark NSURLConnectionDelegate methods
+#pragma mark url helper methods
 
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
-	NSLog(@"Connection didReceiveResponse: %@ - %@", response, [response MIMEType]);
-}
-
-- (void)connection:(NSURLConnection *)connection didReceiveAuthenticationChallenge:(NSURLAuthenticationChallenge *)challenge {
-	NSLog(@"Connection didReceiveAuthenticationChallenge - should not happen: %@", challenge);
-}
-
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
-	NSLog(@"Connection didReceiveData of length: %u", data.length);
+- (NSString *)stringWithUrl:(NSURL *)url
+{
+	NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url
+                                                cachePolicy:NSURLRequestReturnCacheDataElseLoad
+                                            timeoutInterval:30];
+    // Fetch the JSON response
+	NSData *urlData;
+	NSURLResponse *response;
+	NSError *error;
     
-	// Parse the new chunk of data. The parser will append it to
-	// its internal buffer, then parse from where it left off in
-	// the last chunk.
-    NSString* newStr = [NSString stringWithUTF8String:[data bytes]];
-    // TODO: insert check, if newStr == null, if so, try to load again
-    NSLog(@"Loaded data: %@", newStr);
+	// Make synchronous request
+	urlData = [NSURLConnection sendSynchronousRequest:urlRequest
+                                    returningResponse:&response
+                                                error:&error];
     
-    parser = [[SBJsonParser alloc] init];
-    
-    NSArray *jsonData = [parser objectWithString:newStr];
-    
-    for (NSDictionary *dict in jsonData) {
-        //NSLog(@"bla: %@ : %@ : %@ : %@", [dict objectForKey:@"name"], [dict objectForKey:@"author"], [dict objectForKey:@"length"], [dict objectForKey:@"url"]);
-        [listOfItems addObject: dict];
-    }
-    
-    [videoTable reloadData];
-    loading = NO;
-}
-
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-    NSLog(@"Connection failed! Error - %@ %@",
-          [error localizedDescription],
-          [[error userInfo] objectForKey:NSURLErrorFailingURLStringErrorKey]);
-}
-
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+ 	// Construct a String around the Data from the response
+	return [[NSString alloc] initWithData:urlData encoding:NSUTF8StringEncoding];
 }
 
 #pragma mark Table View Data Source Methods
