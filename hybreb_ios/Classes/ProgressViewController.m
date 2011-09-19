@@ -53,7 +53,7 @@
 - (void)viewDidLoad
 {
     NSLog(@"progress view loaded. now uploading... %@", filePath);
-    NSURL *url = [NSURL URLWithString:@"http://www.abendstille.at/hybreb_ios/add-video/1"];
+    NSURL *url = [NSURL URLWithString:@"http://www.hardnight.tv/blog/add-video/1"];
     
     ASIFormDataRequest *request = [ASIFormDataRequest requestWithURL:url];
     

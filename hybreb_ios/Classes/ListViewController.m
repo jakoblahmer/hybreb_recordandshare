@@ -50,7 +50,7 @@
     HardNightAppDelegate *appDelegate = (HardNightAppDelegate *)[[UIApplication sharedApplication] delegate];
     [appDelegate checkOnlineStatus];
     
-    NSURL* url = [NSURL URLWithString:@"http://www.abendstille.at/hybreb_ios/list-videos/10"];
+    NSURL* url = [NSURL URLWithString:@"http://www.hardnight.tv/blog/list-videos/10"];
     NSString *jsonString = [self stringWithUrl:url];
 
 	// Parse the new chunk of data. The parser will append it to

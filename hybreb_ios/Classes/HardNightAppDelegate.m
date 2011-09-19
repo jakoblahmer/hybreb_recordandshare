@@ -35,7 +35,7 @@
 }
 
 - (void)checkOnlineStatus {
-    Reachability *reachability = [Reachability reachabilityWithHostName:@"www.abendstille.at"];
+    Reachability *reachability = [Reachability reachabilityWithHostName:@"www.hardnight.tv"];
     NetworkStatus internetStatus = [reachability currentReachabilityStatus];
     
     if ((internetStatus != ReachableViaWiFi) && (internetStatus != ReachableViaWWAN))
