@@ -8,7 +8,7 @@
 
 #import <MediaPlayer/MediaPlayer.h>
 #import "ListViewController.h"
-
+#import "HardNightAppDelegate.h"
 
 @implementation ListViewController
 
@@ -47,6 +47,8 @@
     
 	// load data from url
     loading = YES;
+    HardNightAppDelegate *appDelegate = (HardNightAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate checkOnlineStatus];
     
     NSURL* url = [NSURL URLWithString:@"http://www.abendstille.at/hybreb_ios/list-videos/10"];
     NSString *jsonString = [self stringWithUrl:url];
@@ -106,8 +108,8 @@
 - (NSString *)stringWithUrl:(NSURL *)url
 {
 	NSURLRequest *urlRequest = [NSURLRequest requestWithURL:url
-                                                cachePolicy:NSURLRequestReturnCacheDataElseLoad
-                                            timeoutInterval:30];
+                                                cachePolicy:NSURLRequestReloadRevalidatingCacheData
+                                            timeoutInterval:10];
     // Fetch the JSON response
 	NSData *urlData;
 	NSURLResponse *response;

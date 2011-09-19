@@ -8,6 +8,7 @@
 
 #import "RecordViewController.h"
 #import "ProgressViewController.h"
+#import "HardNightAppDelegate.h"
 
 //#import "Facebook.h"
 
@@ -69,6 +70,9 @@ static NSString* fb_email;
 //	NSArray *perms = [NSArray arrayWithObjects: @"user_about_me", nil];
     NSArray* permissions = [[NSArray arrayWithObjects:@"email", nil] retain];
 	
+    HardNightAppDelegate *appDelegate = (HardNightAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate checkOnlineStatus];
+    
     NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
     if ([defaults objectForKey:@"FBAccessTokenKey"] 
         && [defaults objectForKey:@"FBExpirationDateKey"]) {
