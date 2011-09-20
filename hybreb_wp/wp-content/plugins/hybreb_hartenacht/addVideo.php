@@ -9,30 +9,42 @@ require_once( ABSPATH . 'wp-admin/includes/admin.php' );
 ob_end_clean();
 
 
-echo '<pre>'; print_r($_POST); echo '</pre>';
+//echo '<pre>'; print_r($_POST); echo '</pre>';
 
 // $_POST contains:
 // 	$_POST['fb_id']
 // 	$_POST['fb_name']
 // 	$_POST['fb_email']
 
-// TODO: get userId from FaceBook-id
-$userId = 1;
+// get userId from FaceBook-id
+$fbUid = (int)$_POST['fb_id'];
+
+// get id of user
+global $wpdb;
+global $current_page_city;
+$usermeta = $wpdb->prefix . 'usermeta';
+$select_user = "SELECT user_id FROM $usermeta WHERE meta_key = 'fbuid' AND meta_value = '$fbUid'";
+
+$user_id = $wpdb->get_var($wpdb->prepare($select_user));
+
+$user_name = $_POST['fb_name'];
+$user_email = $_POST['fb_email'];
+if ($user_name != 'admin' && (is_null($user_id) || !$user_id)) {
+	
+	// create new user
+	$user_id = username_exists( $user_name );
+	if ( !$user_id ) {
+		$random_password = wp_generate_password( 12, false );
+		$user_id = wp_create_user( $user_name, $random_password, $user_email );
+	} else {
+		$random_password = __('User already exists.  Password inherited.');
+	}
+	
+	add_user_meta( $user_id, 'fbuid', $fbUid, true );
+}
 
 echo '<html><head><title>upload</title></head><body>';
 if (isset($_FILES['video'])) {
-	// create post
-	$post = array(
-		'post_title' => 'Video post '.date('d.m.Y G:i')
-		,'post_content' => 'A new video post'
-		,'post_status' => 'publish'
-		,'post_author' => $userId
-		//,'post_category' => array(8,39)
-	);
-
-	$post_id = wp_insert_post($post);
-	echo 'created post '.$post_id.'<br />';
-
 	// Get the type of the uploaded file. This is returned as "type/extension"
 	$arr_file_type = wp_check_filetype(basename($_FILES['video']['name']));
 	$uploaded_file_type = $arr_file_type['type'];
@@ -62,24 +74,38 @@ if (isset($_FILES['video'])) {
 			// Generate a title for the image that'll be used in the media library
 			$file_title_for_media_library = 'Video Upload';
 
+			// create post
+			$post = array(
+				'post_title' => 'Video post '.date('d.m.Y G:i')
+				,'post_content' => '<video src="'.$uploaded_file['url'].'" controls />'
+				,'post_status' => 'publish'
+				,'post_author' => $user_id
+				//,'post_category' => array(8,39)
+			);
+
+			kses_remove_filters();
+			$post_id = wp_insert_post($post);
+			kses_init_filters();
+			
+			echo 'created post '.$post_id.'<br />';
+
 			// Set up options array to add this file as an attachment
 			$attachment = array(
 				'post_mime_type' => $uploaded_file_type,
 				'post_title' => 'Video post '.date('d.m.Y G:i'), //'Uploaded video ' . addslashes($file_title_for_media_library),
-				'post_content' => '<video src="'.$uploaded_file['url'].'" controls />',
 				'post_status' => 'inherit'
 			);
 
 			// Run the wp_insert_attachment function. This adds the file to the media library and generates the thumbnails. If you wanted to attch this image to a post, you could pass the post id as a third param and it'd magically happen.
 			$attach_id = wp_insert_attachment( $attachment, $file_name_and_location, $post_id );
-			
+
 			echo 'created attachment: '.$attach_id.'<br />';
-			
+
 			require_once(ABSPATH . 'wp-admin/includes/image.php');
-			
+
 			$attach_data = wp_generate_attachment_metadata( $attach_id, $file_name_and_location );
 			echo 'attachment data: <pre>'.print_r($attach_data,1).'</pre><br />';
-			
+
 			wp_update_attachment_metadata($attach_id,  $attach_data);
 
 			// Now, update the post meta to associate the new image with the post
@@ -87,13 +113,6 @@ if (isset($_FILES['video'])) {
 
 			// Set the feedback flag to false, since the upload was successful
 			$upload_feedback = false;
-			
-			$post['post_content'] = '<video src="'.$uploaded_file['url'].'" controls />';
-			$post['ID'] = $post_id;
-			
-			// update post to insert the video
-			wp_update_post($post);
-
 
 		} else { // wp_handle_upload returned some kind of error. the return does contain error details, so you can use it here if you want.
 

@@ -27,10 +27,10 @@ $toolkit = new PHPVideoToolkit('/tmp');
 $number = (int)$_GET['videos'];
 if ($number <= 0) $number = 10;
 
-
 $args = array(
 	'post_type' => 'post'
 ,	'post_status' => null
+,	'order' => 'DESC'
 ,	'numberposts' => $number
 );
 $attachArgs = array(
@@ -47,6 +47,9 @@ $posts = get_posts($args);
 if ($posts) {
 	//echo 'we got '.count($posts).' posts<br />';
 	foreach ($posts as $post) {
+		setup_postdata($post);
+		$author = get_the_author();
+		
 		$oPost = $post;
 		$attachArgs['post_parent'] = $post->ID;
 		
@@ -73,7 +76,7 @@ if ($posts) {
 		
 		$json[] = array(
 			'name' => apply_filters( 'the_title', $attachments[0]->post_title )
-		,	'author' => get_the_author()
+		,	'author' => $author
 		,	'length' => $info['duration']['timecode']['rounded']
 		,	'url' => $url
 		);
