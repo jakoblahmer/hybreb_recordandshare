@@ -592,8 +592,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Matthias Steinböck (AFU4ESR6E8)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Matthias Steinboeck";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -604,7 +604,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = hardnight.tv;
-				PROVISIONING_PROFILE = "613670C6-63D1-4718-A7FB-15E1BC3415E0";
+				PROVISIONING_PROFILE = "632A4E78-E3B1-453F-AB2E-36D1A4CF52A4";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 			};
 			name = Debug;
@@ -613,7 +613,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Matthias Steinböck (AFU4ESR6E8)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Matthias Steinboeck";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = hardnight.tv_Prefix.pch;
@@ -622,7 +622,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = hardnight.tv;
-				PROVISIONING_PROFILE = "613670C6-63D1-4718-A7FB-15E1BC3415E0";
+				PROVISIONING_PROFILE = "632A4E78-E3B1-453F-AB2E-36D1A4CF52A4";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
